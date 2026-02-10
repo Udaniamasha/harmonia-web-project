@@ -1,7 +1,7 @@
 # Harmonia - Mental Health & Wellness Platform (Student Module)
 
 ## Overview
-This repository contains my individual contributions to "Harmonia," a group web development project focused on United Nations Sustainable Development Goals (SDGs). 
+This repository contains my individual contributions to "Harmonia," a group web development project focused on United Nations Sustainable Development Goals (SDGs) and final output. 
 
 As **Student 4** in the development team, I was responsible for the User Profile architecture, the content strategy for Mental Health, and the technical implementation of the site's interactive navigation map.
 
@@ -25,9 +25,3 @@ As **Student 4** in the development team, I was responsible for the User Profile
 - CSS3 (Variables, Grid, Flexbox, Animations)
 - JavaScript (DOM Manipulation, Event Listeners)
 - W3C Validation standards
-
-## 📸 Screenshots
-*(You can add screenshots here later)*
-
-## Note on Links
-*This repository represents my specific contribution (Student 4). Some navigation links pointing to other team members' pages (Student 1-3) may not be active in this demo.*
