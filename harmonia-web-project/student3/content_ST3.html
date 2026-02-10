@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease prevention and healthcare access</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CWK/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="../student2/home.html" id="logo">
+            <img src="images/Harmonia.jpg" alt="Harmonia Logo">
+        </a>
+        <h2>Harmonia</h2>
+
+        <!-- Main navigation menu -->
+        <nav id="navlist">
+            <a href="../student2/home.html">Home</a>
+            <a href="../student1/volunteer/volunteer.html" >Volunteer</a>
+            <a href="../student2/table.html" >Wellness</a>
+            <a href="../student3/feedback.html" class="active">Feedback</a>
+            <a href="../student4/Student04/sitemap.html">Sitemap</a>
+            <a href="../student3/team.html" >Team</a>
+            <a href="../student4/Student04/profile.html" id="user_profile" >
+                <img src="images/img.webp" alt="User Profile Image">
+            </a>
+        </nav>
+    </header>
+
+    <!-- sliding menu bar -->
+    <img id="menuIcon" src="images/menuIcon.png" alt="menuIcon" onclick="toggleMenuBar()">
+    <div id="menuBar">
+        <a href="#subtopic1" class="menu_content">Common Diseases and Prevention Methods</a><br>
+        <a href="#subtopic2" class="menu_content">Importance of Hygiene, Sanitation, and Healthy Environments</a><br>
+        <a href="#subtopic3" class="menu_content">Barriers to Healthcare Access and Global Health Disparities</a><br>
+        <a href="#subtopic4" class="menu_content">Role of Vaccinations, Immunization Programs, and Public Health Initiatives</a><br>
+
+        <!-- menu footer -->
+        <div class="menu-footer">
+            <h3 class="websiteName">HARMONIA</h3>
+            <p class="editor">Editor: student_03 <br> Imandi Kariyapperuma</p>
+            <img id="webLogo" src="images/Harmonia.jpg" alt="harmonia">
+        </div>
+    </div>
+
+    <!-- content -->
+    <h2 id="Top">Disease Prevention & Healthcare Access</h2>
+
+    <div class="content" id="up">
+        <div class="subtopic">
+            <h3 id="subtopic1">01. Common Diseases and Prevention Methods</h3> <br>
+        </div>
+        <p>Diseases like diabetes, heart disease, and infections are big health problems around the world.
+        To help prevent these diseases, it’s important to live a healthy lifestyle.
+        You can reduce your risk of diabetes by eating a balanced diet that includes whole grains,
+        fruits, and vegetables, along with exercising regularly and keeping a healthy weight.
+        To prevent heart disease, you should exercise often, eat a low-fat diet, avoid smoking, and manage stress.
+        To lower the risk of infections like the flu, malaria, and COVID-19, practice good hygiene, get vaccinated,
+        and stay away from people who are sick.
+        Also, getting regular check-ups can help catch any problems early and stop them from getting worse.</p>
+        <div>
+            <img src="images/01_subtopic.jpg" alt="01SubTopic" class="images">
+            <p class="imageCaption">figure 01: Exercising makes you fit and healthy</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="content">
+        <div class="subtopic">
+            <h3 id="subtopic2">02. Importance of Hygiene, Sanitation, and Healthy Environments</h3> <br>
+        </div>
+        <p>Keeping good hygiene and cleanliness is important to avoid getting sick.
+        Simple actions like washing hands with soap, drinking clean water, and throwing away trash properly
+        can help stop the spread of germs.
+        Clean places make life better and lower the chances of getting illnesses like cholera,
+        diarrhea, and respiratory infections. Teaching people about hygiene and making sure everyone has
+        access to clean bathrooms, especially in rural and less developed areas, is key to improving health in
+            communities.</p>
+        <div>
+            <img src="images/02_subtopic.jpg" alt="02SubTopic" class="images">
+            <p class="imageCaption">figure 02: Good hygiene and cleanliness is important</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="content">
+        <div class="subtopic">
+            <h3 id="subtopic3">03. Barriers to Healthcare Access and Global Health Disparities</h3> <br>
+        </div>
+        <p>Not everyone has the same level of access to good healthcare.
+        In rural and remote areas, it can be hard to find hospitals and clinics.
+        Many people also face financial problems, like not having health insurance, which stops them from
+        getting the medical help they need. Cultural beliefs, language differences, and a lack of
+        understanding about health issues add to these problems. To solve these challenges, we need clear plans
+            that make healthcare affordable, easy to reach, and respectful of different cultures for everyone.</p>
+        <div>
+            <img src="images/03_subtopic.jpg" alt="03SubTopic" class="images">
+            <p class="imageCaption">figure 03: Inclusive health for all</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="content">
+        <div class="subtopic">
+            <h3 id="subtopic4">04. Role of Vaccinations, Immunization Programs, and Public Health Initiatives</h3> <br>
+        </div>
+        <p>Vaccinations and immunization programs are important for stopping the spread of diseases.
+        These programs help keep people and communities safe from illnesses like measles, polio, and the flu.
+        Governments and health groups run vaccination campaigns to make sure that people, especially kids,
+        get the shots they need. Public health efforts, like health education, mobile health clinics, and community
+            outreach, are key in spreading knowledge and improving healthcare access for underserved communities.</p>
+
+        <div>
+            <img src="images/04_subtopic.jpg" alt="04SubTopic" class="images">
+            <p class="imageCaption">figure 04: Get vaccinations to stop the spread of diseases</p>
+        </div> <br>
+    </div>
+
+    <br>
+    <div class="content">
+        <p>Combining disease prevention measures with efforts to improve healthcare access is key to enhancing public
+        health outcomes. Collaboration between governments and healthcare providers is essential for success.
+        Communities also play a vital role in bridging healthcare gaps. Together, we can promote health equity for
+            everyone.</p><br>
+    </div>
+    <br><br>
+
+    <!-- go to top button -->
+    <a href="#up">
+        <img src="images/arrow.png" alt="toTop" id="gototop_button">
+    </a>
+
+    <!-- java-script for the sliding menu bar -->
+    <script>
+        function toggleMenuBar() {
+          const menuBar = document.getElementById ("menuBar");
+          if (menuBar.style.width === "320px") {
+            menuBar.style.width = "0";
+          }  else {
+            menuBar.style.width = "320px";
+          }
+        }
+
+        document.addEventListener("click", function(event) {
+            const menuBar = document.getElementById ("menuBar");
+            const menuIcon = document.getElementById ("menuIcon");
+
+            if (!menuBar.contains(event.target) && !menuIcon.contains(event.target)) {
+                menuBar.style.width = "0";
+            }
+        });
+    </script>
+
+    <!-- footer -->
+    <span id="edited">Edited by K.M.S.I. Kariyapperuma - Student 03</span>
+    <section id="footer">
+        <footer class="section_footer">
+            <div class="footer-cont-main">
+                <!-- Social Media Icons -->
+                <div class="footer-cont">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Website navigation links -->
+                <div class="footer-cont">
+                    <div class="use-links">
+                        <h4>Website Links</h4>
+                        <ul>
+                            <li><a href="../student2/home.html">Home</a></li>
+                            <li><a href="../student1/volunteer/volunteer.html">Volunteer</a></li>
+                            <li><a href="../student2/table.html">Wellness</a></li>
+                            <li><a href="../student3/feedback.html">Feedback</a></li>
+                            <li><a href="../student4/Student04/sitemap.html">Sitemap</a></li>
+                            <li><a href="../student3/team.html">Team</a></li>
+                            <li><a href="../student4/Student04/profile.html">User Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content page links -->
+                <div class="footer-cont">
+                    <div class="cont-pages">
+                        <h4>Content Pages</h4>
+                        <ul>
+                            <li><a href="../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                            <li><a href="../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                            <li><a href="../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                            <li><a href="../student1/content/content_ST1.html">Healthy Lifestyle & Social
+                                Well-being</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Editor page links -->
+                <div class="footer-cont">
+                    <div class="our-team">
+                        <h4>Editor's Page</h4>
+                        <ul>
+                            <li><a href="../student1/pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                            <li><a href="../student2/pageEditor_ST2.html">Student 02</a></li>
+                            <li><a href="../student3/pageEditor_ST3.html">Student 03</a></li>
+                            <li><a href="../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright information and credits -->
+            <div class="footer-2">
+                <div class="copyright">
+                    <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                        <b>Designed by Group G24</b></p>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+</body>
+</html>

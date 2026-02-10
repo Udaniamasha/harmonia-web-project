@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Awareness Campaign | Health & Wellbeing</title>
+        <link rel="stylesheet" href="../CWK/style.css">
+        <link rel="stylesheet" href="css/volunteer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+        <style>
+            /* hide success page by default */
+            #success-page{
+                display: none;
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            /* show success page when targeted */
+            #success-page:target{
+                display: block;
+                animation: autoHide 5s forwards;
+            }
+
+            /*Hide form after submission */
+            #success-page:target ~ .ratings-section .feedback-section #feedback-form{
+                display: none;
+            }
+
+            /* redirect back button */
+            #success-page .back-button{
+                display: block;
+                text-align: center;
+                margin: 20px auto;
+                text-decoration: none;
+                color: #2a7a7b;
+                font-weight: bold;
+            }
+
+            /* ensure success message is styled */
+            #success-page .feedback-success{
+                display:block;
+                text-align: center;
+                padding: 30px;
+                background: var(--primary-color);
+                border-radius: 10px;
+                margin-bottom: 20px;
+                animation: fadeIn 0.5s ease;
+            }
+
+            /*Hide additional review text by defauls */
+            .review-text{
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            /* show full text when expanded */
+            .review-text.expanded{
+                display: block;
+                -webkit-line-clamp: unset;
+                
+            }
+
+            /* auto hide success message */
+            #success-page{
+                animation: autoHide 3s forwards;
+            }
+
+            /*see more review related styling*/
+
+            .review-content:target .review-text {
+                display: block;
+                -webkit-line-clamp: unset;
+            }
+
+            .review-content:target .see-more {
+                display: none;
+            }
+
+            .see-more {
+                color: #2a7a7b;
+                text-decoration: underline;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 5px;
+            }
+
+            @keyframes autoHide {
+                0% {opacity: 1;}
+                90% {opacity: 1;}
+                100%{
+                    opacity: 0;
+                    display: none;
+                }
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!--header section-->
+        <header>
+            <a href="../student2/home.html" id="logo">
+                <img src="../images/logo.jpg" alt="Harmonia Logo">
+            </a>
+            <h2>Harmonia</h2>
+
+            <!-- Main navigation menu -->
+            <nav id="navlist">
+                <a href="../../student2/home.html">Home</a>
+                <a href="../volunteer/volunteer.html" class="active">Volunteer</a>
+                <a href="../../student2/table.html">Wellness</a>
+                <a href="../../student3/feedback.html">Feedback</a>
+                <a href="../../student4/Student04/sitemap.html" >Sitemap</a>
+                <a href="../../student3/team.html">Team</a>
+                <a href="../../student4/Student04/profile.html" id="user_profile" >
+                    <img src="../../student2/img/img.webp" alt="User Profile Image">
+                </a>
+            </nav>
+        </header>
+
+        <!--main content-->
+        <main class="container">
+            <!--project details section-->
+            <div class="project-detail">
+                <a href="volunteer.html" class="back-button">
+                    ← Back to Projects
+                </a>
+
+                <div class="project-header">
+                    <img src="../images/health.jpg" class="project-image" alt="Health awareness campaign volunteers conducting a community workshop">
+                    <h1 class="project-title">Health Awareness Campaign</h1>
+                    <div class="project-details">
+                        <div class="detail-item">⏱ 5-15 hours/week</div>
+                        <div class="detail-item">📍 Various Venues</div>
+                        <div class="detail-item">👥 689 Volunteers</div>
+                    </div>
+                </div>
+
+                <!--project description section-->
+                <div class="project-section">
+                    <h3>Project Description</h3>
+                    <p>This Campaign aims to educate individuals on mental health issues, coping strategies, and stress management. Volunteers will play a crucial role in creating a safe space for open discussions and mental health awareness.</p>
+                </div>
+
+                <!--project objectives section-->
+                <div class="project-section">
+                    <h3>Objectives</h3>
+                    <ul class="Objectives-list">
+                        <li>Raise awareness of mental health challenges</li>
+                        <li>Distribute pamphlets on mental wellness</li>
+                        <li>Provides free counseling sessions for attendees</li>
+                    </ul>
+                </div>
+
+                <!-- Target Audience Section -->
+                <div class="project-section">
+                    <h3>Target Audience</h3>
+                    <p>Low-income individuals, people with limited access to mental health resources</p>
+                </div>
+
+                <!-- Volunteer Roles Section -->
+                <div class="project-section">
+                    <h3>Volunteer Roles</h3>
+                    <ul class="roles-list">
+                        <li>Organize information booths</li>
+                        <li>Help facilitate wellness workshops and sessions</li>
+                        <li>Support counseling professionals in one-on-one consultations</li>
+
+                    </ul>
+                </div>
+
+                <!-- Impact Section -->
+                <div class="project-section">
+                    <h3>Impact</h3>
+                    <p>Reach 500 individuals with valuable mental health resources and provide 200 free consultations</p>
+                </div>
+
+                <div class="testimonial">
+                    "I felt so good knowing I was part of a team that made a real difference. The community truly appreciated the effort."
+                </div>
+
+                <a href="apply.html" class="apply-button">Apply Now</a>
+            </div>
+
+            <!--Ratings and Reviews Section-->
+            <section class="ratings-section">
+                <div class="ratings-header">
+                    <h2 class="ratings-title">Volunteer Reviews</h2>
+                    <div class="overall-rating">
+                        <div class="rating-number">9.4/10</div>
+                        <div class="rating-text">Exceptional</div>
+                        <div class="rating-count">Based on 182 reviews</div>
+                    </div>
+                </div>
+
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-rating">Transformative Experience - 10/10</div>
+                        </div>
+                        <div class="review-content" id="review1">
+                            <span class="review-text">Participating in the Health Awareness Campaign was an eye-opening journey. The comprehensive training equipped me with skills to help people understand mental health, break down stigmas, and provide compassionate support. I never realized how powerful education and empathy could be in making a community healthier.</span>
+                            <a href="#review1" class="see-more">See more</a>
+                        </div>
+
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Alex Patel</div>
+                            <div class="review-date">January 20, 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-rating">Making a Real Difference - 9/10</div>
+                        </div>
+                        <div class="review-content" id="review2">
+                            <span class="review-text">As someone passionate about mental health, this campaign exceeded my expectations. The organization's approach to community education is holistic and sensitive. We don't just distribute information; we created safe spaces for people to discuss their mental health challenges, learned active listening techniques, and provided genuine support.</span>
+                            <a href="#review2" class="see-more">See more</a>
+                        </div>
+
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Emma Rodriguez</div>
+                            <div class="review-date">February 5, 2025</div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-rating">Empowering Community Support - 9.5/10</div>
+                        </div>
+                        <div class="review-content" id="review3">
+                            <span class="review-text">Volunteering for the Health Awareness Campaign was more than just a program - it was a profound learning experience. The training we received went beyond basic information, teaching us about mental health advocacy, de-stigmatization, and how to create supportive environments. I feel empowered knowing I'm contributing to positive mental health in my community.</span>
+                            <a href="#review3" class="see-more">See more</a>
+                        </div>
+
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Jordan Lee</div>
+                            <div class="review-date">February 18, 2025</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Feedback Form-->
+                <div class="feedback-section">
+                    <div class="feedback-header">
+                        <h3>Share Your Feedback</h3>
+                        <p>We value your thoughts on this volunteer program. Please take a moment to share your experience.</p>
+                    </div>
+
+                    <div class="rating-container">
+                        <span class="rating-label">Rate your experience:</span>
+                        <div class="rating-buttons">
+                            <button type="button" class="rating-btn" title="Poor" aria-label="Rate as Poor">😞</button>
+                            <button type="button" class="rating-btn" title="Fair" aria-label="Rate as Fair">😐</button>
+                            <button type="button" class="rating-btn" title="Good" aria-label="Rate as Good">🙂</button>
+                            <button type="button" class="rating-btn" title="Very Good" aria-label="Rate as Very Good">😊</button>
+                            <button type="button" class="rating-btn" title="Excellent" aria-label="Rate as Excellent">😄</button>
+                        </div>
+                    </div>
+
+                    <form id="feedback-form" action="#success-page" method="post">
+                        <div class="form-group">
+                            <textarea id="feedback-text" name="feedback-text" rows="5" placeholder="Write your review here... What did you like? What could be improved?" required></textarea>
+                        </div>
+
+                        <div class="feedback-buttons">
+                            <button type="submit" class="submit-feedback-btn">Submit Feedback</button>
+                            <button type="reset" class="cancel-feedback-btn">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Success Page for Feedback Submission -->
+            <div id="success-page">
+                <div class="feedback-success">
+                    <p>Thank you for your feedback! Your insights help us improve our volunteer programs.</p>
+                    <a href="volunteer.html" class="back-button">Back to Volunteer Programs</a>
+                </div>
+            </div>
+        </main>
+
+        
+        <span id="editted">Edited by Pathumi Kaveesha - Student 01</span>
+
+        <!-- Back to top button with accessibility attributes -->
+        <button id="button" onclick="window.location.href='#top'" title="Back to Top" aria-label="Back to top of page"></button>
+
+        <!--footer section-->
+        <section id="footer">
+            <footer class="section_footer">
+                <div class="footer-cont-main">
+                    <!-- Social Media Icons -->
+                    <div class="footer-cont">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Website navigation links -->
+                    <div class="footer-cont">
+                        <div class="use-links">
+                            <h4>Website Links</h4>
+                            <ul>
+                                <li><a href="../../student2/home.html">Home</a></li>
+                                <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                                <li><a href="../../student2/table.html">Wellness</a></li>
+                                <li><a href="../../student3/feedback.html">Feedback</a></li>
+                                <li><a href="../../student4/Student04/sitemap.html">Sitemap</a></li>
+                                <li><a href="../../student3/team.html">Team</a></li>
+                                <li><a href="../../student4/Student04/profile.html">User Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Content page links -->
+                    <div class="footer-cont">
+                        <div class="cont-pages">
+                            <h4>Content Pages</h4>
+                            <ul>
+                                <li><a href="../../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                                <li><a href="../../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                                <li><a href="../../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                                <li><a href="../content/content_ST1.html">Healthy Lifestyle & Social Well-being</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Editor page links -->
+                    <div class="footer-cont">
+                        <div class="our-team">
+                            <h4>Editor's Page</h4>
+                            <ul>
+                                <li><a href="../pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                                <li><a href="../../student2/pageEditor_ST2.html">Student 02</a></li>
+                                <li><a href="../../student3/pageEditor_ST3.html">Student 03</a></li>
+                                <li><a href="../../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright information and credits -->
+                <div class="footer-2">
+                    <div class="copyright">
+                        <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                        <b>Designed by Group G24</b></p>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+        
+    </body>
+</html>

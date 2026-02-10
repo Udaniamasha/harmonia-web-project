@@ -1,0 +1,212 @@
+
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 120px;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+}
+
+/* Container setup */
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Sticky sidebar */
+aside {
+    flex: 1;
+    background-color: var(--accent-color);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    position: sticky; /* Sticky positioning */
+    top: 100px; /* Adjust based on your header height */
+    width: 240px; /* Set a fixed width */
+    height: auto;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    border-left: 4px solid var(--primary-color);
+    align-self: flex-start;
+    order: -1; /* This places the aside before the main content in flex layout */
+    margin-right: 30px; /* Add some space between sidebar and main content */
+}
+
+main {
+    flex: 3;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    aside {
+        position: static; /* Reset on mobile */
+        width: auto;
+        max-height: none;
+        order: 0; /* Reset order on mobile */
+        margin-right: 0;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Typography */
+h2 {
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--heading-color);
+    margin-top: 25px;
+}
+
+
+/* Links */
+a {
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* List Styling */
+.ref li {
+    list-style: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    padding-bottom: 8px;
+    list-style-type: circle;
+}
+
+/* Student Header */
+.stud {
+    text-align: center;
+    background: linear-gradient(45deg, var(--primary-color), var(--heading-color));
+    color: white;
+    margin: 0 0 30px 0;
+    padding: 15px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: var(--shadow);
+}
+
+.stud h2 {
+    margin: 0;
+    border-bottom: none;
+    color: white;
+}
+
+/* Technical Details Sections */
+.tech-details {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 15px 0;
+}
+
+.tech-details h4 {
+    color: var(--heading-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tech-details ul, .tech-details ol {
+    padding-left: 20px;
+}
+
+.tech-details li {
+    margin-bottom: 8px;
+}
+
+/* Code Elements */
+code {
+    background-color: #f0f0f0;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #d63384;
+}
+
+/* Back to Top Button */
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+}
+
+.top a {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top a:hover {
+    background-color: var(--heading-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Challenges Section */
+.challenge-item {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.challenge-item h3 {
+    color: var(--heading-color);
+    margin-top: 0;
+}
+

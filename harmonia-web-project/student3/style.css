@@ -1,0 +1,452 @@
+/* start */
+:root {
+    --primary-color: #ACDDDE;
+    --secondary-color: #CAF1DE;
+    --accent-color: #E1F8DC;
+    --light-color: #FEF8DD;
+    --text-color: #555;
+    --heading-color: #2a7a7b;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--accent-color);
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 150px;
+    color: var(--text-color);
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* content page */
+.menu_content {
+    border: solid 3px;
+    border-radius: 12px;
+    border-color: #FFE7C7;
+}
+
+.menu_content:hover {
+    border: solid 3px #FFE7C7;
+}
+
+.content {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    border: solid 2px;
+    border-color: var(--primary-color);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.content:hover {
+    transition: all 0.3s ease;
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.subtopic {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+#menuIcon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    opacity: 0.7;
+    position: fixed;
+    top: 130px;
+    left: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#menuBar {
+    height: 95%;
+    width: 0;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 63px;
+    z-index: 1;
+    text-align: left;
+    background-color: #FEF8DD;
+    border: 2px solid #FFE7C7;
+}
+
+#menuBar a {
+    padding: 12px 15px;
+    color: #555;
+    display: block;
+    transition: 0.2s;
+    text-decoration: none;
+    white-space: normal;
+    margin-bottom: 5px;
+}
+
+#menuBar a:hover {
+    background-color: #FFE7C7;
+    width: 100%;
+}
+
+.menu-footer {
+    color: black;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    border-top: 3px solid #FFE7C7;
+    text-align: left;
+    background-color: #FFE7C7;
+}
+
+#webLogo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    z-index: 2;
+}
+
+.images {
+    display: block;
+    margin: auto;
+    width: 45%;
+}
+
+.imageCaption {
+    color: var(--text-color);
+    font-size: 12px;
+    text-align: center;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* feedback form */
+#requiredFields {
+	color: maroon;
+}
+
+.feedbackForm {
+	border-radius: 25px;
+	box-shadow: 0 2px 1000px rgba(0, 0, 0, 0.1);
+	background-color: whitesmoke;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+	max-width: 100%;
+}
+
+#Top {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.form_group {
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.inputBoxes {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    border-width: 1px;
+    font-size: 16px;
+}
+
+.inputBoxes:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+textarea{
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.ratingGroup label {
+    margin-right: 30px;
+}
+
+#submit, #reset {
+	padding: 14px 24px;
+	border-radius: 6px;
+	border-width: 1px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 50px;
+	background-color: #FEF8DD;
+}
+
+#submit:hover, #reset:hover {
+	background-color: #FFE7C7;
+	cursor: pointer;
+}
+
+
+/* Team page */
+#userInstructions {
+    color: #718096;
+    font-size: 16px;
+    text-align: center;
+}
+
+#mainText {
+    font-size: 18px;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    background-color: #EDF9EB;
+    border-radius: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.teamMember {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.teamMember:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.memberThumbnail {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.UnderImage {
+    background-color: white;
+}
+
+.teamMember:hover .memberThumbnail {
+    opacity: 2;
+}
+
+.memberName {
+    text-align: center;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.memberRole {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: maroon;
+}
+
+.memberDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.teamMember:hover .memberDetails {
+    opacity: 0.9;
+    transform: scale(1);
+}
+
+.detail-title {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.task-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* other common */
+h2 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+h3 {
+    color: var(--heading-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h4 {
+    color: DarkBlue;
+    ont-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/* Page Editor */
+.student {
+    background-color: #cbccc2ef;
+    border-radius: 10px;
+}
+
+#StudentName {
+    font-size: 25px;
+}
+
+.editor {
+    padding-left: 100px;
+}
+
+.EditorContent {
+    background-color: white;
+    line-height: 1.7;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 20px;
+    margin: auto;
+    border: solid 2px;
+    border-color: var(--primary-color);
+    text-align: justify;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-left: 250px; /* Space for side content */
+}
+
+.EditorContent:hover {
+    transition: all 0.3s ease;
+    border-color: var(--primary-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.headings {
+    text-align: center;
+    font-size: 25px;
+    background-color: var(--primary-color);
+}
+
+ul ul {
+    padding-left: 40px; /* Additional indentation for nested lists */
+}
+
+.ClickableImages {
+    display: block;
+    margin: auto;
+    width: 45%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+code {
+    background-color: var(--light-color);
+    font-family: 'Courier New', Courier, monospace;
+    color: #d63384;
+}
+
+#fixedMenu {
+    position: fixed;
+    Background-color: var(--primary-color);
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.7;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*Validation page*/
+.validProof {
+    display: block;
+    margin: auto;
+    width: 85%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h6 {
+    font-size: 15px;
+}
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+/*Go to top Button*/
+#gototop_button {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}

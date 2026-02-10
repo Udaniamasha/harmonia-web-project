@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Editor Student 1 - Pathumi Kaveesha</title>
+        <!--external styling sheets-->
+        <link rel="stylesheet" href="css/pageEditor_validator.css">
+        <link rel="stylesheet" href="../CWK/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+
+    <body>
+        <header>
+            <a href="../../student2/home.html" id="logo">
+                <img src="../images/logo.jpg" alt="Harmonia Logo">
+            </a>
+            <h2>Harmonia</h2>
+    
+              <!-- Main navigation menu -->
+            <nav id="navlist">
+                <a href="../../student2/home.html">Home</a>
+                <a href="../volunteer/volunteer.html" class="active">Volunteer</a>
+                <a href="../../student2/table.html">Wellness</a>
+                <a href="../../student3/feedback.html">Feedback</a>
+                <a href="../../student4/Student04/sitemap.html" >Sitemap</a>
+                <a href="../../student3/team.html">Team</a>
+                <a href="../../student4/Student04/profile.html" id="user_profile" >
+                    <img src="../../student2/img/img.webp" alt="User Profile Image">
+                </a>
+            </nav>
+        </header>
+
+        <section class="stud">
+            <h2>Pathumi Kaveesha, Student 01</h2>
+        </section>
+
+        <div class="container">
+            <!--main content area-->
+            <main>
+
+                <!-- Splash page section -->
+                <section>
+                    <h2 id="splash">Splash Page</h2>
+                    
+                    <h3>Technical Description</h3>
+                    <p>The splash screen serves as the initial entry point to our website, designed to create a memorable first impression while effectively communicating our project's purpose focused on health and well-being.</p>
+
+                    <!-- Technical details with collapsible sections -->
+                    <div class="tech-details"> 
+                        <h4>Key HTML Elements Used:</h4>
+                        <ul>
+                            <li><code>&lt;!DOCTYPE html&gt;</code> and <code>&lt;html lang="en"&gt;</code>: Defines the document type and language for accessibility.</li>
+                            <li><code>&lt;meta charset="UTF-8"&gt;</code>: Ensures proper text encoding.</li>
+                            <li><code>&lt;meta name="viewport"&gt;</code>: Enables responsive design for mobile devices.</li>
+                            <li><code>&lt;meta http-equiv="refresh"&gt;</code>: Auto-redirects to home.html after 4 seconds.</li>
+                            <li><code>&lt;video&gt;</code> with <code>autoplay muted loop playsinline</code>: Background video element with attributes for continuous, silent playback across devices.</li>
+                            <li><code>&lt;img&gt;</code> with <code>alt</code> attributes: Logo elements with descriptive alternative text.</li>
+                            <li>Semantic elements like <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>: Provides document structure and hierarchy.</li>
+                            <li><code>&lt;div&gt;</code> containers: Used for grouping and styling related content sections.</li>
+                        </ul>
+
+                        <h4>CSS Techniques Applied:</h4>
+                        <ul>
+                            <li>Flexbox layout: <code>display: flex</code> with <code>justify-content</code> and <code>align-items</code> centers content vertically and horizontally.</li>
+                            <li>Positioning: <code>position: absolute</code> with <code>inset: 0</code> for the background and strategic positioning for logos and team section.</li>
+                            <li>CSS animations: <code>keyframes</code> for <code>fadeUp</code>, <code>fadeIn</code>, and <code>spin</code> effects creating a staggered entrance sequence.</li>
+                            <li>Text styling: <code>background-clip: text</code> with linear gradient creates a sophisticated text effect for the title.</li>
+                            <li>Media queries: Responsive adjustments for screens below 768px width.</li>
+                            <li>Z-index management: Ensures proper layering of elements with the video background behind content.</li>
+                            <li>Filter effects: <code>brightness(0.4)</code> on the video improves text visibility.</li>
+                            <li>CSS transitions: Gradual opacity changes for smoother animations.</li>
+                        </ul>
+                        
+                        <h4>Design Justification:</h4>
+                        <p>These design elements work together to create a visually appealing and user-friendly interface. The dark video overlay enhances readability while maintaining engagement, and the centered content with absolute positioning establishes a clear hierarchy. Staggered animations guide the viewer's focus, while gradient text effects add a touch of sophistication. Circular logos with shadows ensure brand presence without clutter, and a loading spinner provides feedback during redirections. The full viewport layout delivers an immersive experience, with strategic spacing ensuring a clean and balanced design.</p>
+                    </div>
+
+                    <!-- Accessibility section describing features to support diverse users -->
+                        <h4>Accessibility Considerations:</h4>
+                        <ul>
+                            <li>Proper document language declaration: Helps screen readers use correct pronunciation.</li>
+                            <li>Semantic HTML structure: Improves navigation for assistive technologies.</li>
+                            <li>Alt text for images: Provides descriptions for screen reader users.</li>
+                            <li>Color contrast: White text on darkened background ensures readability.</li>
+                            <li>Text scaling: Relative units (rem) allow text to scale with user preferences.</li>
+                            <li>Video attributes: <code>muted</code> prevents unexpected audio, while <code>playsinline</code> prevents unexpected fullscreen on mobile.</li>
+                            <li>Text shadows: Enhances readability over variable background.</li>
+                            <li>Responsive design: Ensures usability across different device sizes.</li>
+                            <li>Focus states: Not explicitly shown but should be included for keyboard navigation.</li>
+                            <li>Meta refresh: Provides automatic redirection but at 4 seconds gives adequate time for users to perceive content.</li>
+                        </ul>
+
+                        <!-- Links to validation and actual page -->
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#splashVal" target="_blank">View splash page validation results</a></p>
+
+                        <h3>Link to the splash page</h3>
+                        <p><a href="../splash/splash.html" target="_blank">View the splash page</a></p>
+
+                </section>
+
+                <!-- Volunteer page section -->
+                <section>
+                    <h2 id="volunteer">Voluneteer Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The volunteer page provides information about health-related volunteer opportunities, presenting them in an organized and visually appealing layout.</p>
+
+                    <div class="tech-details"> 
+                        <h3>Key HTML Elements Used:</h3>
+                        <!-- Hierarchical list of HTML elements organized by function -->
+                        <h4>Document Structure Tags:</h4>
+                        <ol>  
+                            <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document type as HTML5.</li>
+                            <li><code>&lt;html lang="en"&gt;</code>: Root element with English language specification.</li>
+                            <li><code>&lt;head&gt;</code>: Contains meta information, title, and stylesheet links.</li>
+                            <li><code>&lt;body&gt;</code>: Contains all visible content.</li>
+                            
+                        </ol>
+
+                        <h4>Structural Section Tags:</h4>
+                        <ol>
+                            <li><code>&lt;header&gt;</code>: Contains the site logo, title, and navigation.</li>
+                            <li><code>&lt;main&gt;</code>: Holds the primary content (volunteer programs).</li>
+                            <li><code>&lt;footer&gt;</code>: Contains copyright information and secondary navigation links.</li>
+                        </ol>
+
+                        <h4>Navigation Elements:</h4>
+                        <ol>
+                            <li><code>&lt;nav&gt;</code> with <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>: Creates the main navigation menu.</li>
+                            <li><code>&lt;a href="..."&gt;</code>: Creates hyperlinks to other pages.</li> 
+                        </ol>
+
+                        <h4>Content Organization:</h4>
+                        <ol>
+                            <li><code>&lt;div class="container"&gt;</code>: Used repeatedly for content wrapping and layout control.</li>
+                            <li><code>&lt;div class="programs-grid"&gt;</code>: Contains the program cards in a grid layout.</li>
+                            <li><code>&lt;div class="program-card"&gt;</code>: Individual program information containers.</li>   
+                        </ol>
+
+                        <h4>Form Elements:</h4>
+                        <ol>   
+                            <li><code>&lt;select&gt;</code> with <code>&lt;option&gt;</code>: Creates a dropdown filter for programs.</li> 
+                        </ol>
+
+                        <h4>Text Formatting:</h4>
+                        <ol>
+                            <li>Various heading levels (<code>&lt;h1&gt;</code>, <code>&lt;h3&gt;</code>): Define headings with different importance.</li>
+                            <li><code>&lt;p&gt;</code>: Defines paragraphs of text.</li>
+                        </ol>
+
+                        <h4>CSS Integration:</h4>
+                        <ol>
+                            <li><code>&lt;link rel="stylesheet"&gt;</code>: Links to external CSS file.</li>
+                            <li>Multiple class attributes: Used to apply styling from the CSS file.</li>
+                        </ol>
+
+                        <h4>CSS Techniques Applied:</h4>
+                        <ul>
+                            <li>CSS Variables: <code>:root</code> with custom properties like <code>--primary-color</code> creates a unified color scheme across the site.</li>
+                            <li>Flexbox layout: <code>display: flex</code> with <code>justify-content: space-between</code> in header for navigation alignment.</li>
+                            <li>CSS Grid: <code>.programs-grid</code> uses <code>grid-template-columns: repeat(2, 1fr)</code> for a responsive two-column card layout.</li>
+                            <li>Hover animations: <code>transform: translateY(-5px)</code> and box-shadow changes create card elevation effects.</li>
+                            <li>Pseudo-elements: <code>nav ul li a::after</code> builds custom underline animations for navigation links.</li>
+                            <li>Sticky positioning: <code>position: sticky; top: 0;</code> keeps the header visible while scrolling.</li>
+                            <li>Custom form styling: <code>appearance: none</code> with SVG background for the dropdown selector.</li>
+                            <li>Box-shadow effects: <code>box-shadow: var(--shadow)</code> adds depth to cards and UI elements.</li>
+                            <li>CSS transitions: <code>transition: var(--transition)</code> creates smooth hover effects throughout.</li>
+                            <li>Background images: <code>background-size: cover</code> with fixed height creates consistent card header images.</li>
+                            <li>Flexible card layout: <code>display: flex; flex-direction: column;</code> with <code>flex-grow: 1</code> for equal-height cards.</li>
+                            <li>Border-radius: <code>border-radius: 12px</code> with <code>overflow: hidden</code> creates clean rounded corners on cards.</li>
+                        </ul>
+                        
+                        <h4>Design Justification:</h4>
+                        <p>The volunteer page was designed with a card-based layout to ensure that each opportunity is presented in a structured and visually consistent manner. The design emphasizes readability and accessibility, using typography and color hierarchy to highlight key details. A dropdown menu is included to suggest sorting options for future functionality while maintaining a clean and intuitive user experience. The layout remains effective as the number of volunteer opportunities grows, ensuring scalability and ease of navigation.</p>
+                    </div>
+
+                    <!-- Accessibility considerations for volunteer page -->
+                        <h4>Accessibility Considerations:</h4>
+                        <p>For the volunteer page, I focused on ensuring accessibility through:</p>
+                        <ul>
+                            <li>Semantic HTML structure: Improves navigation for assistive technologies.</li>
+                            <li>Responsive design that adapts to different screen sizes and zoom levels</li>
+                            <li>Sufficient color contrast between text and background for readability</li>
+                            <li>Descriptive alt text for all images including logo, program images, and profile pictures</li>
+                            <li>Fixed navigation header ensuring constant access to main site sections.</li>
+                            <li>Back-to-top button reducing scrolling requirements</li>
+                            <li>Clear visual distinction between different content sections.</li>
+                            <li>Appropriately sized text with adequate line spacing for readability.</li>
+                        </ul>
+
+                        <!-- Links to validation and actual pages -->
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#volunteerVal" target="_blank">View volunteer page validation results</a></p>
+
+                        <h3>Link to the Volunteer page</h3>
+                        <p><a href="../volunteer/volunteer.html" target="_blank">View the volunteer page</a></p>
+
+                </section>
+
+                <!-- Project pages section describing multiple related pages -->
+                <section>
+                    <h2 id="projects">Project Pages</h2>
+                    <h3>Technical Description</h3>
+                    <p>The project pages provide detailed information about various volunteer projects, including project descriptions, objectives, target audience, and volunteer roles. They feature ratings and feedback sections where volunteers can share their experiences, along with a user-friendly feedback form that dynamically updates the page upon submission. Each page maintains a consistent structure to ensure ease of navigation and engagement through interactive elements like the feedback form and review expansion.</p>
+
+                    <div class="tech-details"> 
+                        <h4>Key HTML Elements Used:</h4>
+                        <ul>
+                            <li><code>&lt;header&gt;</code>: Contains the navigation menu and branding elements for consistency across pages.</li>
+                            <li><code>&lt;section&gt;</code>: Organizes content like project descriptions, feedback, and ratings into structured blocks.</li>
+                            <li><code>&lt;form&gt;</code>: Enables users to submit feedback dynamically, enhancing interactivity.</li>
+                            <li><code>&lt;button&gt;</code>: Triggers interactions such as submitting feedback and expanding review details.</li>
+                            <li><code>&lt;div class="review-card"&gt;</code>: Structures individual user reviews, ensuring a clean and readable layout.</li>
+                            <li><code>&lt;script&gt;</code>: Implements dynamic features like form submission handling and review expansion.</li>
+                        </ul>
+
+                        <h4>CSS Techniques Applied:</h4>
+                        <ul>
+                            <li>Flexbox Layout: <code>display: flex;</code> with <code>justify-content</code> and <code>align-items</code> centers content both vertically and horizontally, ensuring a responsive and clean layout.</li>
+                            <li>CSS Animations: <code>@keyframes</code> for <code>fadeIn</code> and <code>fadeOut</code> effects to create smooth transitions for form submissions and page changes.</li>
+                            <li>Text Clamping: <code>-webkit-line-clamp: 2;</code> truncates longer reviews, and the "See more" button expands the text, improving readability without overwhelming the page.</li>
+                            <li>Positioning: <code>position: absolute;</code> and <code>z-index</code> ensure elements are layered correctly, with video backgrounds placed behind the content.</li>
+                            <li>Hover Effects: <code>transform: scale(1.05);</code> and <code>transition: 0.3s;</code> smoothens hover interactions for buttons and cards, enhancing user engagement.</li>
+                            <li>Media Queries: Responsive adjustments with <code>@media</code> for different screen sizes, optimizing layout and design for mobile and desktop views.</li>
+                        </ul>
+                        
+                        <h4>Design Justification:</h4>
+                        <p>The design focuses on a clean, responsive layout using Flexbox for alignment and media queries for mobile optimization. CSS animations and transitions create smooth interactions, while text clamping for reviews maintains a tidy look. Buttons and links are styled with hover effects to enhance user engagement, ensuring a visually appealing and interactive experience across devices.</p>
+                    </div>
+
+                    <!-- Accessibility features for project pages -->
+                        <h4>Accessibility Considerations:</h4>
+                        <ul>
+                            <li>Alternative Text for Images: <code>&lt;img src="images/logo.jpg" alt="Harmonia Logo"&gt;</code> ensures screen readers describe the image content.</li>
+                            <li>Keyboard & Screen Reader Navigation: Proper use of semantic HTML (<code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>) improves accessibility.</li>
+                            <li>ARIA Attributes for Interactive Elements: The "Back to Top" button includes <code>aria-label="Back to top of page"</code> for clarity.</li>
+                            <li>Color Contrast & Readability: The color scheme ensures good readability, with a background color (#CAF1DE) for success messages improving visibility.</li>
+                        </ul>
+
+                        <h3>Links to the validation pages</h3>
+                        <p><a href="validation_ST1.html#projectVal" target="_blank">View project pages validation results</a></p>
+
+                        <h3>Link to the Project pages</h3>
+                        <p><a href="../volunteer/fitness.html" target="_blank">View Fitness page</a></p>
+                        <p><a href="../volunteer/healthAwareness.html" target="_blank">View Health Awareness page</a></p>
+                        <p><a href="../volunteer/meals.html" target="_blank">View Healthy Meals page</a></p>
+                        <p><a href="../volunteer/mentalAid.html" target="_blank">View Mental Aid page</a></p>
+
+
+                </section>
+
+                <!-- Application page section -->
+                <section>
+                    <h2 id="apply">Application Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>The "Volunteer Application" page collects personal and volunteer-related information using a structured form. It features input validation, dropdowns, and text areas, with a submit button redirecting users to a thank-you page. The design is responsive, ensuring accessibility with semantic HTML and ARIA attributes.</p>
+
+                    <div class="tech-details"> <!--MY PAGE STYLES-->
+                        <h4>Key HTML Elements Used:</h4>
+                        <ul>
+                            <li><code>&lt;!DOCTYPE html&gt;</code> and <code>&lt;html lang="en"&gt;</code>: Defines the document type and language for accessibility.</li>
+                            <li><code>&lt;meta charset="UTF-8"&gt;</code>: Ensures proper text encoding.</li>
+                            <li><code>&lt;meta name="viewport"&gt;</code>: Enables responsive design for mobile devices.</li>
+                            <li><code>&lt;nav&gt;</code>: Defines navigation links for easy page traversal.</li>
+                            <li><code>&lt;form&gt;</code>: Contains the volunteer application form with various input types like <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;textarea&gt;</code>.</li>
+                            <li><code>&lt;button&gt;</code>: Submit button for form submission.</li>
+                            <li><code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code>: Structure the header and footer sections for consistency across pages.</li>
+                            <li><code>&lt;a&gt;</code>: Links for navigation and applying to volunteer programs.</li>
+                        </ul>
+                        
+
+                        <h4>CSS Techniques Applied:</h4>
+                        <ul>
+                            <li>Flexbox layout: <code>display: flex</code> with <code>justify-content</code> and <code>align-items</code> for centering content in the header and form elements.</li>
+                            <li>Positioning: <code>position: relative</code> and <code>absolute</code> for precise placement of the back link, buttons, and footer sections.</li>
+                            <li>Responsive design: Media queries adjust the layout for smaller screen sizes to improve mobile usability.</li>
+                            <li>Form styling: Input fields, textareas, and select elements are styled for consistency and ease of use with padding, borders, and font size adjustments.</li>
+                            <li>Button styling: <code>background-color</code> and <code>hover</code> effects on the submit button for improved user interaction.</li>
+                            <li>Typography: Clear font choice with <code>font-family</code> for better readability and user experience.</li>
+                            <li>Color contrast: Ensures sufficient contrast between text and background, improving readability, especially for buttons and form labels.</li>
+                        </ul>
+                        
+                        <h4>Design Justification:</h4>
+                        <p>The page offers a simple, intuitive application process with a clean layout for easy navigation. Semantic HTML improves accessibility, and interactive elements are styled for easy interaction. The design ensures responsiveness across desktop and mobile devices.</p>
+                    </div>
+
+                    <!-- Accessibility considerations for application page -->
+                        <h4>Accessibility Considerations:</h4>
+                        <ul>
+                            <li>Proper document language declaration: Helps screen readers use correct pronunciation.</li>
+                            <li>Semantic HTML structure: Improves navigation for assistive technologies.</li>
+                            <li>Alt text for images: Provides descriptions for screen reader users.</li>
+                            <li>Form Labels: Each input field has a corresponding label, improving keyboard navigation and screen reader compatibility.</li>
+                            <li>Responsive design: Ensures usability across different device sizes.</li>
+                            <li>ARIA Labels: Interactive elements, like buttons, have clear ARIA labels for better accessibility.</li>
+                        </ul>
+
+                        <!-- Links to validation and actual page -->
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#applyVal" target="_blank">View application page validation results</a></p>
+
+                        <h3>Link to the apllication page</h3>
+                        <p><a href="../volunteer/apply.html" target="_blank">View the application page</a></p>
+
+                </section>
+
+                <!-- Content page section -->
+                <section>
+                    <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <p>This content page focuses on providing valuable information about healthy lifestyle strategies, substance use impacts, and social well-being, structured in an accessible and engaging format.</p>
+
+                    <div class="tech-details">
+                        <h4>Key HTML Elements Used:</h4>
+                        <ul>
+                            <li>Utilized semantic <code>&lt;article&gt;</code> tags to structure the main content</li>
+                            <li>Implemented <code>&lt;section&gt;</code> elements to divide content into thematic areas</li>
+                            <li>Applied <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, and <code>&lt;h4&gt;</code> tags for proper content hierarchy</li>
+                            <li>Used <code>&lt;blockquote&gt;</code> elements for highlighting important information</li>
+                            <li>Incorporated <code>&lt;aside&gt;</code> tags for supplementary content</li>
+                        </ul>
+
+                        
+
+                        <h4>CSS Techniques Applied:</h4>
+                        <ul>
+                            <li>Designed with readability as the primary focus, using appropriate line height and font sizes</li>
+                            <li>Applied the color scheme consistently to create visual association between related concepts</li>
+                            <li>Used CSS Grid and Flexbox for responsive content layout</li>
+                            <li>Implemented card-style design for key information points</li>
+                            <li>Applied custom styling for lists and blockquotes to improve visual hierarchy and readability</li>
+                        </ul>
+                        
+                        <h4>Design Justification:</h4>
+                        <p>The content page was designed with information architecture as a priority, ensuring that users can easily navigate through different topics. The layout progresses logically from general health concepts to more specific aspects of social well-being and technology integration. Visual elements were carefully selected to support rather than distract from the content.</p>
+                    </div>
+
+                     <!-- Accessibility considerations for content page -->
+                        <h4>Accessibility Considerations:</h4>
+                        <p>For the content page, I implemented these accessibility features:</p>
+                        <ul>
+                            <li>Well-structured content with clear sections and subsections</li>
+                            <li>Optimized reading experience with appropriate font sizes and line spacing</li>
+                            <li>Consistent navigation patterns throughout the page</li>
+                            <li>Alt text for all informational graphics and images</li>
+                            <li>Skip links for faster navigation to main content sections</li>
+                        </ul>
+
+                        <!-- Links to validation and actual page -->
+
+                        <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST1.html#contentVal" target="_blank">View content page validation results</a></p>
+
+                        <h3>Link to the content page</h3>
+                        <p><a href="../content/content_ST1.html" target="_blank">View the content page</a></p>
+
+                </section>
+
+                <!-- Challenges and lessons learned section -->
+                <section>
+                    <h2 id="challenge">Challenges and Lessons Learned</h2>
+                    <!-- Challenge item 1 -->
+                    <div class="challenge-item">
+                        <h3>Challenge: Responsive Design Implementation</h3>
+                        <p>One of the major challenges I faced was ensuring that all pages remained visually appealing and functional across different screen sizes, particularly with the complex layout of the volunteer page.</p>
+                        <p><strong>Resolution:</strong> I implemented media queries with careful breakpoints and used flexible layouts with CSS Grid and Flexbox. I tested extensively across different devices and adjusted the design accordingly.</p>
+                        <p><strong>Lesson Learned:</strong> Planning for responsiveness from the beginning of the design process is more effective than attempting to retrofit it later. I also learned the importance of using relative units (rem, em, %) rather than fixed pixel values.</p>
+                    </div>
+
+                    <!-- Challenge item 2 -->
+                    <div class="challenge-item">
+                        <h3>Challenge: Maintaining Consistent Styling</h3>
+                        <p>Working with a comprehensive CSS stylesheet provided a challenge in understanding and correctly implementing the established design system while making necessary adjustments for specific page needs.</p>
+                        <p><strong>Resolution:</strong> I spent time analyzing the CSS variables and class patterns, creating a personal reference guide for the styling system. I also used browser developer tools to test how changes would affect the appearance before implementing them.</p>
+                        <p><strong>Lesson Learned:</strong> The importance of well-organized CSS with clear naming conventions and the value of CSS variables for maintaining consistency. I also learned how to effectively extend an existing design system without breaking its core principles.</p>
+                    </div>
+                    
+                    <!-- Challenge item 3 -->
+                    <div class="challenge-item">
+                        <h3>Challenge: Content Organization on Health Topics</h3>
+                        <p>Organizing comprehensive health and well-being information in a way that was both informative and engaging proved challenging, especially with the goal of creating clear connections between different wellness concepts.</p>
+                        <p><strong>Resolution:</strong> I created a content hierarchy with main topics and subtopics, using visual cues through CSS to establish relationships. I also incorporated progressive disclosure techniques to avoid overwhelming users with information.</p>
+                        <p><strong>Lesson Learned:</strong> The importance of information architecture in web design and how visual design can support content organization. I also gained insight into how to balance comprehensiveness with usability when presenting complex health information.</p>
+                    </div>
+                </section>
+
+                <!-- Compliance section -->
+                <section>
+                    <h2 id="compliance">Compliance</h2>
+                    <p>In developing the Splash Screen, Volunteer Page, and Content Page, I ensured compliance with Janet regulations governing web page publication through the following measures:</p>
+                    
+                    <ul>
+                        <li><strong>Content Appropriateness:</strong> All content was created to be educational and informative about health and well-being, avoiding any inappropriate or offensive material.</li>
+                        
+                        <li><strong>Intellectual Property:</strong> Original content was created for the pages, and any external references are properly cited in accordance with academic standards.</li>
+                        
+                        <li><strong>Data Protection:</strong> The pages do not collect personal information from users without clear consent, and all form fields that might request information include appropriate privacy notices.</li>
+                        
+                        <li><strong>Technical Standards:</strong> The HTML and CSS code follows modern web standards and has been validated using W3C validators to ensure proper functioning across different browsers and devices.</li>
+                        
+                        <li><strong>Accessibility Compliance:</strong> As detailed in the Accessibility section, all pages have been developed with WCAG guidelines in mind to ensure they are usable by people with disabilities.</li>
+                        
+                        <li><strong>Security Considerations:</strong> The pages implement secure coding practices to prevent common vulnerabilities, particularly in any interactive elements.</li>
+                    </ul>
+                    
+                    <p>By adhering to these principles, the pages I developed contribute to a website that is legally compliant, ethically sound, and follows best practices for academic web publication.</p>
+                </section>
+
+                <!-- References section with citations -->
+                <section>
+                    <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>World Health Organization. (2024). <i>Guidelines on physical activity and sedentary behaviour</i>. Retrieved from <a href="https://www.who.int/publications/i/item/9789240015128" target="_blank">https://www.who.int/publications/i/item/9789240015128</a></li>
+                        
+                        <li>Smith, J. & Johnson, K. (2023). <i>The impact of social connections on mental health outcomes</i>. Journal of Social Psychology, 45(2), 112-128.</li>
+                        
+                        <li>MDN Web Docs. (2024). <i>CSS Grid Layout</i>. Retrieved from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a></li>
+                        
+                        <li>W3C. (2023). <i>Web Content Accessibility Guidelines (WCAG) 2.2</i>. Retrieved from <a href="https://www.w3.org/TR/WCAG22/" target="_blank">https://www.w3.org/TR/WCAG22/</a></li>
+                        
+                        <li>Janet. (2023). <i>Janet Web Development Guidelines and Policies</i>. Retrieved from <a href="https://community.ja.net/" target="_blank">https://community.ja.net/</a></li>
+                        
+                        <li>University of Westminster. (2025). <i>Web Development Course Materials</i>. University of Westminster Learning Resources.</li>
+                    </ul>
+                </section>
+                
+            </main>
+            
+            <!-- Sidebar area -->
+            <aside>
+                <h3>Core pages developed:</h3>
+            
+                <ul class="top-level-ul">
+                    <li>Student 1
+                        <ul> 
+                            <li><a href="#splash">Splash page</a></li>
+                            <li><a href="#volunteer">Volunteer page</a></li>
+                            <li><a href="#projects">Project Page</a></li>
+                            <li><a href="#apply">Application Page</a></li>
+                            <li><a href="#content">Content page</a></li>
+                            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                            <li><a href="#compliance">Compliance</a></li>
+                            <li><a href="#ref">References</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+            </aside>
+            
+        </div>
+
+        <span id="editted">Edited by Pathumi Kaveesha - Student 01</span>
+
+        <!-- Back to top button with accessibility attributes -->
+        <button id="button" onclick="window.location.href='#top'" title="Back to Top" aria-label="Back to top of page"></button>
+        
+        <!--footer section-->
+        <section id="footer">
+            <footer class="section_footer">
+                <div class="footer-cont-main">
+                    <!-- Social Media Icons -->
+                    <div class="footer-cont">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+    
+                     <!-- Website navigation links -->
+                    <div class="footer-cont">
+                        <div class="use-links">
+                            <h4>Website Links</h4>
+                            <ul>
+                                <li><a href="../../student2/home.html">Home</a></li>
+                                <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                                <li><a href="../../student2/table.html">Wellness</a></li>
+                                <li><a href="../../student3/feedback.html">Feedback</a></li>
+                                <li><a href="../../student4/Student04/sitemap.html">Sitemap</a></li>
+                                <li><a href="../../student3/team.html">Team</a></li>
+                                <li><a href="../../student4/Student04/profile.html">User Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                      <!-- Content page links -->
+                    <div class="footer-cont">
+                        <div class="cont-pages">
+                            <h4>Content Pages</h4>
+                            <ul>
+                                <li><a href="../../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                                <li><a href="../../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                                <li><a href="../../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                                <li><a href="../content/content_ST1.html">Healthy Lifestyle & Social Well-being</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                     <!-- Editor page links -->
+                    <div class="footer-cont">
+                        <div class="our-team">
+                            <h4>Editor's Page</h4>
+                            <ul>
+                                <li><a href="../pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                                <li><a href="../../student2/pageEditor_ST2.html">Student 02</a></li>
+                                <li><a href="../../student3/pageEditor_ST3.html">Student 03</a></li>
+                                <li><a href="../../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Copyright information and credits -->
+                <div class="footer-2">
+                    <div class="copyright">
+                        <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                        <b>Designed by Group G24</b></p>
+                    </div>
+                </div>
+    
+            </footer>
+        </section>
+    </body>
+</html>

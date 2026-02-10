@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - M.V.U Amasha</title>
+    <link rel="stylesheet" href="../CWK/style.css">
+    <link rel="stylesheet" href="Student04.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <a href="../student2/home.html" id="logo">
+            <img src="../img/LOGO.png" alt="Harmonia Logo">
+        </a>
+        <h2>Harmonia</h2>
+
+          <!-- Main navigation menu -->
+        <nav id="navlist">
+            <a href="../../student2/home.html" class="active">Home</a>
+            <a href="../../student1/volunteer/volunteer.html" >Volunteer</a>
+            <a href="../../student2/table.html" >Wellness</a>
+            <a href="../../student3/feedback.html" >Feedback</a>
+            <a href="sitemap.html" >Sitemap</a>
+            <a href="../../student3/team.html" >Team</a>
+            <a href="profile.html" id="user_profile" >
+                <img src="../Img/img.webp" alt="User Profile Image">
+            </a>
+        </nav>
+    </header>
+
+    <section class="editor-stud">
+        <h2>M.V.U Amasha, Student 4</h2>
+    </section>
+
+    <div class="editor-container">
+        <!-- Main content area -->
+        <main class="editor-main">
+
+            <!-- Pages that Student 4 is responsible for -->
+
+            <section class="editor-section">
+                <h2 id="editor-profile">Profile Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            <h4>HTML Structure and Organization</h4>
+
+                            <p><strong>Key HTML Elements Used:</strong></p>
+                            <ul class="editor-list">
+                                <li><code>&lt;!DOCTYPE html&gt;</code> and <code>&lt;html lang="en"&gt;</code>: Establishes document type and language for proper rendering and accessibility.</li>
+                                <li><code>&lt;meta charset="UTF-8"&gt;</code> and <code>&lt;meta name="viewport"&gt;</code>: Ensures correct character encoding and responsive behavior across devices.</li>
+                                <li><code>&lt;link rel="stylesheet"&gt;</code>: Connects to external CSS files including Font Awesome for icons.</li>
+                                <li><code>&lt;section&gt;</code> with <code>aria-labelledby</code>: Creates semantic content blocks with proper accessibility relationships.</li>
+                                <li><code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>: Establishes clear content hierarchy throughout the document.</li>
+                                <li><code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code>: Organizes related content like skills, goals, and services into structured lists.</li>
+                                <li><code>&lt;table&gt;</code>: Implements the availability calendar with appropriate row and cell structure.</li>
+                                <li><code>&lt;form&gt;</code> with labeled <code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>: Creates an accessible contact interface.</li>
+                                <li><code>&lt;div class="grid-container"&gt;</code>: Serves as the main wrapper for the entire profile layout.</li>
+                            </ul>
+
+                            <h4>CSS Techniques Applied</h4>
+
+                            <p><strong>CSS Techniques Applied:</strong></p>
+                            <ul class="editor-list">
+                                <li>CSS Variables: <code>:root</code> variables for colors, shadows, and transitions maintain consistency and simplify theme management.</li>
+                                <li>Box Model Normalization: Universal <code>box-sizing: border-box</code> prevents layout inconsistencies across elements.</li>
+                                <li>CSS Grid Layout: <code>display: grid</code> with <code>grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))</code> creates a responsive, automatically adjusting layout.</li>
+                                <li>Card Pattern: <code>.card</code> class with consistent styling (border-radius, shadow, padding) establishes visual separation between content sections.</li>
+                                <li>Color Theming: Section-specific background colors using rgba values with transparency for visual distinction while maintaining cohesion.</li>
+                                <li>Interactive Elements: Hover states with <code>transform: translateY(-3px)</code> and enhanced shadows provide subtle user feedback.</li>
+                                <li>Skill Visualization: Gradient-filled progress bars with data attributes display skill proficiency visually.</li>
+                                <li>Transitions: <code>transition: var(--transition)</code> ensures smooth animations throughout the interface.</li>
+                                <li>Flexbox Layouts: Used within cards for alignment and spacing of content (particularly in the user info section).</li>
+                                <li>Vendor Prefixes: <code>-webkit</code>, <code>-moz</code>, and other prefixes ensure cross-browser compatibility.</li>
+                            </ul>  
+                        
+                    
+                    <h3>Accessibility</h3>
+
+                    <p>The profile page implements several key accessibility features:</p>
+
+                    <ul class="editor-list">
+                        <li>Semantic HTML Structure: Proper use of sectioning elements and headings creates a logical document outline.</li>
+                        <li>ARIA Attributes: Each section includes <code>aria-labelledby</code> references connecting to their respective headings.</li>
+                        <li>Screen Reader Support: The <code>.sr-only</code> class hides visual elements while keeping them available to screen readers.</li>
+                        <li>Image Alternatives: All images include descriptive <code>alt</code> attributes.</li>
+                        <li>Form Accessibility: Input fields are properly associated with their labels using <code>for</code> and <code>id</code> attributes.</li>
+                        <li>Color Contrast: Dark text colors on light backgrounds ensure sufficient contrast for readability.</li>
+                        <li>Focus States: Interactive elements include visible focus states for keyboard navigation.</li>
+                        <li>Responsive Design: The layout adapts to different screen sizes through media queries.</li>
+                        <li>Text Scaling: Typography uses relative units allowing content to scale with user preferences.</li>
+                        <li>Icon Accessibility: Icons are accompanied by text labels, ensuring their meaning is clear to all users.</li>
+                    </ul>
+                    
+                    <h3>Link to the validation page</h3>
+                        <p><a href="validation_ST4.html#profileVal" target="_blank"> Go To Profile Validation page</a> </p>
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html" target="_blank">User Profile Page.</a></p>
+            </section>
+
+            <section class="editor-section">
+                <h2 id="editor-sitemap">Sitemap Page</h2>
+
+                <h3>Technical Description</h3>
+
+                <p>The sitemap page provides an interactive visual representation of the website's structure using SVG graphics, allowing users to navigate the site hierarchy through an intuitive diagram.</p>
+                
+                <h4>Key HTML Elements Used:</h4>
+                <ul class="editor-list">
+                    <li><strong>Document Structure Tags:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document as HTML5.</li>
+                            <li><code>&lt;html lang="en"&gt;</code>: Root element with English language specification.</li>
+                            <li><code>&lt;meta name="viewport"&gt;</code>: Ensures proper rendering on various devices.</li>
+                            <li><code>&lt;link rel="stylesheet"&gt;</code>: Links to normalize.css, custom CSS, and the Inter font.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Content Organization:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;div class="container"&gt;</code>: Main wrapper for all content.</li>
+                            <li><code>&lt;header&gt;</code>: Contains the page title and description.</li>
+                            <li><code>&lt;main&gt;</code>: Holds the primary content.</li>
+                            <li><code>&lt;div class="sitemap-container card"&gt;</code>: Contains the SVG sitemap.</li>
+                            <li><code>&lt;div class="sitemap-instructions card"&gt;</code>: Contains usage instructions.</li>
+                        </ul>
+                    </li>
+                    <li><strong>SVG Implementation:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;svg id="sitemap"&gt;</code>: The main SVG element containing the sitemap visualization.</li>
+                            <li><code>&lt;g class="node-group"&gt;</code>: Groups for interactive nodes with encapsulated elements.</li>
+                            <li><code>&lt;rect class="node"&gt;</code>: Rectangle elements representing pages.</li>
+                            <li><code>&lt;text class="node-text"&gt;</code>: Text labels for each page node.</li>
+                            <li><code>&lt;line class="connector"&gt;</code>: Lines connecting nodes to represent hierarchy.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Interactive Elements:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;a href="..."&gt;</code>: Hyperlinks within each node group for navigation.</li>
+                            <li><code>tabindex="0"</code>: Makes nodes keyboard-focusable.</li>
+                            <li><code>role="link"</code>: Defines the semantic role for accessibility.</li>
+                            <li><code>title</code> and <code>aria-label</code> attributes: Provide additional context.</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h4>CSS Techniques Applied:</h4>
+                <ul class="editor-list">
+                    <li><strong>CSS Variables:</strong> Using <code>:root</code> with custom properties for colors, shadows, and transitions creates a cohesive design system.</li>
+                    <li><strong>Card Styling:</strong> <code>.card</code> class with subtle background color, border-radius, and shadow effects.</li>
+                    <li><strong>Interactive Node Styling:</strong> Hover and focus effects using transform and box-shadow; color-coded nodes (home, sub-nodes, active node) for visual differentiation.</li>
+                    <li><strong>Responsive Design:</strong> Media queries adjust font sizes and spacing at different breakpoints; SVG viewBox adjustment via JavaScript for proper rendering at any screen size.</li>
+                    <li><strong>Typography Styling:</strong> Font family hierarchy with fallbacks; decorative heading underlines using pseudo-elements; size differentiation for hierarchy.</li>
+                </ul>
+            
+                <h4>JavaScript Features:</h4>
+                <ul class="editor-list">
+                    <li><strong>SVG viewBox Adjustment:</strong> Dynamically calculates and sets the SVG viewBox based on container dimensions for responsive rendering.</li>
+                    <li><strong>Keyboard Accessibility:</strong> Event listeners for Enter key to activate links when nodes are focused.</li>
+                    <li><strong>Resize Handling:</strong> Recalculates viewBox on window resize events.</li>
+                </ul>
+            
+                <h3>Accessibility</h3>
+                <p>The sitemap implementation addresses accessibility through several key techniques:</p>
+                
+                <ul class="editor-list">
+                    <li><strong>Semantic Structure:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Using proper heading hierarchy (<code>&lt;h1&gt;</code> for page title, <code>&lt;h2&gt;</code> for instructions section).</li>
+                            <li>Semantic grouping with <code>&lt;header&gt;</code> and <code>&lt;main&gt;</code> elements.</li>
+                        </ul>
+                    </li>
+                    <li><strong>SVG Accessibility:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>role="link"</code> attributes define the semantic purpose of node groups.</li>
+                            <li><code>tabindex="0"</code> makes all nodes keyboard-navigable.</li>
+                            <li><code>title</code> elements provide tooltips for additional context.</li>
+                            <li><code>aria-label</code> and <code>aria-labelledby</code> attributes offer descriptive information for screen readers.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Keyboard Navigation:</strong>
+                        <ul class="editor-nested-list">
+                            <li>JavaScript implementation ensures Enter key activates links for keyboard users.</li>
+                            <li>Focus styling (matching hover effects) helps identify the currently focused element.</li>
+                            <li>Logical tab order follows the visual hierarchy of the sitemap.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Visual Clarity:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Color-coded nodes with sufficient contrast ratios.</li>
+                            <li>Current page highlighted with a distinct style (active-node class).</li>
+                            <li>Text size adjustments in media queries maintain readability on smaller screens.</li>
+                            <li>Clear instructions provided for using the sitemap.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Responsiveness:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Dynamic SVG viewBox adjustment ensures the diagram is visible and usable at any screen size.</li>
+                            <li>Font size reductions at smaller viewports prevent text overflow.</li>
+                            <li>Preserved SVG aspect ratio prevents distortion.</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST4.html#sitemapVal" target="_blank"> To the Sitemap Validation Page </a></p>
+                
+                <h3>Link to the page</h3>
+                <p><a href="sitemap.html" target="_blank">Sitemap</a></p>
+            </section>
+
+            <section class="editor-section">
+                <h2 id="editor-content">Content Page</h2>
+                
+                <h3>Technical Description</h3>
+                <p>The content page focuses on providing valuable information about mental health and well-being topics, structured in an accessible and engaging format with a calming color scheme and intuitive navigation.</p>
+                
+                <h4>Key HTML Elements Used:</h4>
+                <ul class="editor-list">
+                    <li><strong>Document Structure Tags:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;!DOCTYPE html&gt;</code>: Defines the document as HTML5.</li>
+                            <li><code>&lt;html lang="en"&gt;</code>: Root element with English language specification.</li>
+                            <li><code>&lt;meta name="viewport"&gt;</code>: Ensures proper rendering on various devices.</li>
+                            <li><code>&lt;link rel="stylesheet"&gt;</code>: Links to normalize.css, custom CSS, and the Inter font.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Content Organization:</strong>
+                        <ul class="editor-nested-list">
+                            <li><code>&lt;div class="container"&gt;</code>: Main wrapper for all content.</li>
+                            <li><code>&lt;header&gt;</code>: Contains the page title and description.</li>
+                            <li><code>&lt;main&gt;</code>: Holds the primary content.</li>
+                            <li><code>&lt;div class="content-section card"&gt;</code>: Contains structured thematic content.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4>CSS Techniques Applied:</h4>
+                <ul class="editor-list">
+                    <li><strong>CSS Variables:</strong> Using <code>:root</code> with custom properties for colors, shadows, and transitions creates a cohesive design system.</li>
+                    <li><strong>Card-Based Layout:</strong> <code>.card</code> class with subtle background color, border-radius, and shadow effects.</li>
+                    <li><strong>Interactive Styling:</strong> Hover and focus effects using transform and box-shadow; visually distinct sections for improved readability.</li>
+                    <li><strong>Responsive Design:</strong> Media queries ensure readability and usability on various devices.</li>
+                    <li><strong>Typography Styling:</strong> Font family hierarchy with fallbacks; decorative heading underlines using pseudo-elements; size differentiation for hierarchy.</li>
+                </ul>
+                
+                <h3>Accessibility</h3>
+                <p>The content page incorporates accessibility best practices to ensure usability for all users.</p>
+                
+                <ul class="editor-list">
+                    <li><strong>Semantic Structure:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Using proper heading hierarchy (<code>&lt;h1&gt;</code> for page title, <code>&lt;h2&gt;</code> for sections).</li>
+                            <li>Semantic grouping with <code>&lt;header&gt;</code> and <code>&lt;main&gt;</code> elements.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Keyboard Navigation:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Logical tab order ensures smooth navigation.</li>
+                            <li>Focus styles highlight active elements.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Visual Clarity:</strong>
+                        <ul class="editor-nested-list">
+                            <li>Color contrast maintained for readability.</li>
+                            <li>Readable font sizes and responsive typography.</li>
+                        </ul>
+                    </li>
+                </ul>
+    
+                
+                <h3>Link to the validation page</h3>
+                <p><a href="validation_ST4.html#contentVal" target="_blank"> To the Content Validation Page </a></p>
+                <h3>Link to the page</h3>
+                <p><a href="content_ST4.html" target="_blank">Student 04 Content Page.</a></p>
+            </section>
+            
+            <section class="editor-section">
+                <h2 id="editor-challenge">Challenges and Lessons Learned</h2>
+                <p>Developing the Content, Sitemap, and Profile pages presented several challenges, each offering valuable learning opportunities. These challenges spanned across HTML structure, CSS styling, JavaScript implementation, and accessibility considerations.</p>
+                
+                <h3>Challenge 1: Implementing a Responsive and Accessible Sitemap with SVG</h3>
+                <p><strong>Problem:</strong> Ensuring the sitemap diagram scaled correctly on all screen sizes, maintained readability, and provided a good user experience for both mouse and keyboard users required careful planning.</p>
+                <p><strong>Solution:</strong></p>
+                <ul class="editor-list">
+                    <li>Dynamic <code>viewBox</code> calculation using JavaScript to scale the SVG proportionally.</li>
+                    <li>Media queries to adjust font sizes and spacing at different breakpoints.</li>
+                    <li>Keyboard navigation enhancements using event listeners for Enter key activation.</li>
+                    <li>ARIA attributes for improved accessibility.</li>
+                </ul>
+                <p><strong>Lesson Learned:</strong> Planning for accessibility from the beginning is crucial to an inclusive user experience.</p>
+                
+                <h3>Challenge 2: Maintaining Consistent Styling and Layout Across Pages</h3>
+                <p><strong>Problem:</strong> Ensuring a consistent look across different pages while adapting to their specific content and functionality.</p>
+                <p><strong>Solution:</strong></p>
+                <ul class="editor-list">
+                    <li>CSS variables for colors, shadows, and transitions.</li>
+                    <li>Reusable CSS classes for consistent design.</li>
+                    <li>Logical organization of CSS files for maintainability.</li>
+                </ul>
+                <p><strong>Lesson Learned:</strong> A well-planned CSS architecture ensures scalability and maintainability.</p>
+                
+                <h3>Challenge 3: Creating a Responsive and Accessible Profile Page Layout</h3>
+                <p><strong>Problem:</strong> Balancing content sections for readability and accessibility on all screen sizes.</p>
+                <p><strong>Solution:</strong></p>
+                <ul class="editor-list">
+                    <li>CSS Grid for flexible layouts.</li>
+                    <li>Semantic HTML elements for better structure.</li>
+                    <li>ARIA attributes and form accessibility enhancements.</li>
+                    <li>Thorough testing across devices and assistive technologies.</li>
+                </ul>
+                <p><strong>Lesson Learned:</strong> Modern layout techniques like Grid and Flexbox improve responsiveness and accessibility.</p>
+                
+                <h3>Challenge 4: Implementing Fixed Sidebar and Sticky Positioning</h3>
+                <p><strong>Problem:</strong> Overlapping of sticky/fixed elements with page content.</p>
+                <p><strong>Solution:</strong></p>
+                <ul class="editor-list">
+                    <li>Using <code>top: 100px</code> to prevent overlap with navigation bars.</li>
+                    <li>Adjusting <code>position: fixed</code> settings and <code>z-index</code> to resolve conflicts.</li>
+                </ul>
+                <p><strong>Lesson Learned:</strong> Consideration of all page elements prevents layout conflicts.</p>
+                
+                <h3>Challenge 5: In-page Navigation and Responsive Sidebar</h3>
+                <p><strong>Problem:</strong> Creating smooth in-page navigation with a responsive sidebar.</p>
+                <p><strong>Solution:</strong></p>
+                <ul class="editor-list">
+                    <li>Using fragment identifiers (<code>#</code> links) for smooth scrolling.</li>
+                    <li>Applying <code>position: fixed</code> to keep the sidebar visible while scrolling.</li>
+                    <li>Media queries for horizontal navigation adaptation on smaller screens.</li>
+                </ul>
+                <p><strong>Lesson Learned:</strong> Responsive design must consider multiple screen sizes and user interactions.</p>
+            </section>
+            
+            <section class="editor-section">
+                <h2 id="editor-compliance">Compliance</h2>
+                <p>The Profile, Sitemap, and Content pages have been developed with consideration for the Janet Web Domain Policy and related guidelines. Below is a discussion of key aspects and compliance efforts.</p>
+                
+                <h3>Key Areas and Compliance Efforts</h3>
+                <ul class="editor-list">
+                    <li><strong>Accessibility:</strong> Implemented WCAG-aligned features, but a full accessibility audit is recommended.</li>
+                    <li><strong>Copyright:</strong> All content is original; explicit attribution for images should be considered.</li>
+                    <li><strong>Privacy & Data Protection:</strong> No user data is collected; future forms must comply with GDPR.</li>
+                    <li><strong>Security:</strong> Best practices followed; server-side implementations would require stricter security measures.</li>
+                    <li><strong>Branding:</strong> Professional presentation maintained; correct logos should be used per guidelines.</li>
+                    <li><strong>Accuracy:</strong> Regular content updates should be planned for a live deployment.</li>
+                    <li><strong>Network Usage:</strong> Optimized for performance; heavy media should be avoided.</li>
+                    <li><strong>Janet Web Domain Policy Compliance:</strong> Pages are designed to align with the core principles of Janet's regulations, but a formal compliance audit would be required for full verification.</li>
+                </ul>
+                <p><strong>Honest Assessment:</strong> Further review and adjustments, particularly in accessibility and security, would be needed for a fully compliant live deployment.</p>
+            </section>
+
+            <section class="editor-section">
+                <h2 id="editor-ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style).</p>
+                <ul class="editor-ref">
+                    <li>Font Awesome. Available: <a href="https://fontawesome.com/">https://fontawesome.com/</a> (Accessed: 24 Feb 2025).</li>
+                    <li>Google Developers (n.d.). Web Fundamentals - Accessibility. Available at: <a href="https://developers.google.com/web/fundamentals/accessibility">https://developers.google.com/web/fundamentals/accessibility</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>iStock (2025). iStock. Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                    <li>Jisc (2024). Janet Web Domain Policy. Available at: <a href="https://community.jisc.ac.uk/library/janet-policies/janet-web-domain-policy">https://community.jisc.ac.uk/library/janet-policies/janet-web-domain-policy</a> (Accessed: 24 February 2024).</li>
+                    <li>MDN Web Docs (n.d.). CSS: Cascading Style Sheets. Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>MDN Web Docs (n.d.). HTML: HyperText Markup Language. Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>MDN Web Docs (n.d.). JavaScript. Available at: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>Mind (n.d.). Information and support. Available at: <a href="https://www.mind.org.uk/">https://www.mind.org.uk/</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>NHS (n.d.). Every Mind Matters. Available at: <a href="https://www.nhs.uk/every-mind-matters/">https://www.nhs.uk/every-mind-matters/</a> (Accessed: 24 Feb 2025).</li>
+                    <li>Normalize.css. Available: <a href="https://necolas.github.io/normalize.css/">https://necolas.github.io/normalize.css/</a> (Accessed: 24 Feb 2025).</li>
+                    <li>Smith, J. & Johnson, K. (2023). The impact of social connections on mental health outcomes. <em>Journal of Social Psychology</em>, 45(2), 112-128.</li>
+                    <li>University of Westminster (2023). Web Development Course Materials. University of Westminster Learning Resources.</li>
+                    <li>W3C (2018). Web Content Accessibility Guidelines (WCAG) 2.1. Available at: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>W3C (n.d.). Accessible Rich Internet Applications (WAI-ARIA) 1.2. Available at: <a href="https://www.w3.org/TR/wai-aria-1.2/">https://www.w3.org/TR/wai-aria-1.2/</a> (Last accessed: 24 Feb 2025).</li>
+                    <li>World Health Organization (2024). Guidelines on physical activity and sedentary behaviour. Retrieved from <a href="https://www.who.int/publications/i/item/9789240015128">https://www.who.int/publications/i/item/9789240015128</a>.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside class="editor-sidebar">
+            <h3>Core pages developed:</h3>
+
+            <ul class="editor-top-level-ul">
+                <li> Student4  M.V.U Amasha </li>
+                <ul class="editor-nested-ul">
+                    <li><a href="#editor-profile">Profile page </a></li>
+                    <li><a href="#editor-sitemap">Sitemap page</a></li>
+                    <li><a href="#editor-content">Content page</a></li>
+                </ul>    
+                <li><a href="#editor-challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#editor-compliance">Compliance</a></li>
+                <li><a href="#editor-ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+    <section id="footer">
+        <footer class="section_footer">
+            <div class="footer-cont-main">
+                <!-- Social Media Icons -->
+                <div class="footer-cont">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                 <!-- Website navigation links -->
+                 <div class="footer-cont">
+                    <div class="use-links">
+                        <h4>Website Links</h4>
+                        <ul>
+                            <li><a href="../../student2/home.html">Home</a></li>
+                            <li><a href="../../student1/volunteer/volunteer.html">Volunteer</a></li>
+                            <li><a href="../../student2/table.html">Wellness</a></li>
+                            <li><a href="../../student3/feedback.html">Feedback</a></li>
+                            <li><a href="sitemap.html">Sitemap</a></li>
+                            <li><a href="../../student3/team.html">Team</a></li>
+                             <li><a href="profile.html">User Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                  <!-- Content page links -->
+                  <div class="footer-cont">
+                    <div class="cont-pages">
+                        <h4>Content Pages</h4>
+                        <ul>
+                            <li><a href="../../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                            <li><a href="content_ST4.html">Mental Health & Well-being</a></li>
+                            <li><a href="../../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                            <li><a href="../../student1/content/content_ST1.html">Healthy Lifestyle & Social Well-being</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- Editor page links -->
+                <div class="footer-cont">
+                    <div class="our-team">
+                        <h4>Editor's Page</h4>
+                        <ul>
+                            <li><a href="../../student1/pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                            <li><a href="../../student2/pageEditor_ST2.html">Student 02</a></li>
+                            <li><a href="../../student3/pageEditor_ST3.html">Student 03</a></li>
+                            <li><a href="pageEditor_ST4.html">Student 04</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span id="editted">Edited by M.V.U Amasha - Student 04</span>
+
+            <!-- Copyright information and credits -->
+            <div class="footer-2">
+                <div class="copyright">
+                    <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                    <b>Designed by Group G24</b></p>
+                </div>
+            </div>
+        <!-- Back to top button with accessibility attributes -->
+        <button id="button" onclick="window.location.href='#top'" title="Back to Top" aria-label="Back to top of page"></button>
+        
+        </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer Application | Health & Wellbeing</title>
+        <link rel="stylesheet" href="../CWK/style.css">
+        <link rel="stylesheet" href="css/volunteer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body>
+        <!--header section-->
+        <header>
+            <a href="../student2/home.html" id="logo">
+                <img src="../images/logo.jpg" alt="Harmonia Logo">
+            </a>
+            <h2>Harmonia</h2>
+
+            <!-- Main navigation menu -->
+            <nav id="navlist">
+                <a href="../../student2/home.html">Home</a>
+                <a href="../volunteer/volunteer.html" class="active">Volunteer</a>
+                <a href="../../student2/table.html">Wellness</a>
+                <a href="../../student3/feedback.html">Feedback</a>
+                <a href="../../student4/Student04/sitemap.html" >Sitemap</a>
+                <a href="../../student3/team.html">Team</a>
+                <a href="../../student4/Student04/profile.html" id="user_profile" >
+                    <img src="../../student2/img/img.webp" alt="User Profile Image">
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main Content Section -->
+        <main class="container">
+            <div class="form-container">
+
+                <!-- Back Button Navigation -->
+                <a href="volunteer.html" id="back-link" class="back-button">
+                    ← Back to Volunteer Programs
+                </a>
+
+                <!-- Form Header and Description -->
+                <div class="form-header">
+                    <h2>Volunteer Application</h2>
+                    <p>Join our team of volunteers and make a difference in your community</p>
+                </div>
+
+                <!-- Volunteer Application Form -->
+                <form action="thank-you.html" method="get">
+
+                    <!-- Personal Information Section - First and Last Name -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Section - Email and Phone -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Address Information -->
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+
+                    <!-- City and Zip Code -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip">Zip Code *</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                    </div>
+
+                    <!-- Volunteer Preferences Section -->
+                    <div class="form-group">
+                        <label for="volunteer-interest">Volunteer Area of Interest</label>
+                        <select id="volunteer-interest" name="volunteer-interest" required>
+                            <option value="" disabled selected>-- Select an area of interest --</option>
+                            <option value="health-awareness">Health Awareness</option>
+                            <option value="fitness">Fitness Programs</option>
+                            <option value="nutrition">Nutrition Support</option>
+                            <option value="mental-health">Mental Health Support</option>
+                            <option value="community-outreach">Community Outreach</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Availability Selection -->
+                    <div class="form-group">
+                        <label for="availibility">Availibility</label>
+                        <select id="availibility" name="availibility" required>
+                            <option value="" disabled selected>-- Select your availability --</option>
+                            <option value="weekday-mornings">Weekday Mornings</option>
+                            <option value="weekday-afternoons">Weekday Afternoons</option>
+                            <option value="weekday-evenings">Weekday Evenings</option>
+                            <option value="weekend-mornings">Weekend Mornings</option>
+                            <option value="weekend-afternoons">Weekend Afternoons</option>
+                            <option value="weekend-evenings">Weekend Evenings</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+
+                    <!-- Qualifications and Experience Section -->
+                    <div class="form-group">
+                        <label for="skills">Relevant Skills and Experience</label>
+                        <textarea id="skills" name="skills" placeholder="Describe any skills, qualifications, or experience that may be relevant to volunteering."></textarea>
+                    </div>
+
+                    <!-- Motivation Section -->
+                    <div class="form-group">
+                        <label for="motivation">Motivation for Volunteering</label>
+                        <textarea id="motivation" name="motivation" placeholder="Tell us why you're interested in volunteering with our orgranization."></textarea>
+                    </div>
+
+                    <!-- Terms and Conditions Agreement -->
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                        <label for="agree-terms">I agree to the volunteer terms and conditions and understand that submitting this application does not guarantee placement. *</label>
+                    </div>
+
+                    <!-- Form Submission Button -->
+                    <button type="submit" class="submit-button">Submit Application</button>
+                </form>
+            </div>
+        </main>
+
+        <span id="editted">Edited by Pathumi Kaveesha - Student 01</span>
+
+        <!-- Back to top button with accessibility attributes -->
+        <button id="button" onclick="window.location.href='#top'" title="Back to Top" aria-label="Back to top of page"></button>
+
+        <!--footer section-->
+        <section id="footer">
+            <footer class="section_footer">
+                <div class="footer-cont-main">
+                    <!-- Social Media Icons -->
+                    <div class="footer-cont">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Website navigation links -->
+                    <div class="footer-cont">
+                        <div class="use-links">
+                            <h4>Website Links</h4>
+                            <ul>
+                                <li><a href="../../student2/home.html">Home</a></li>
+                                <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                                <li><a href="../../student2/table.html">Wellness</a></li>
+                                <li><a href="../../student3/feedback.html">Feedback</a></li>
+                                <li><a href="../../student4/Student04/sitemap.html">Sitemap</a></li>
+                                <li><a href="../../student3/team.html">Team</a></li>
+                                <li><a href="../../student4/Student04/profile.html">User Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Content page links -->
+                    <div class="footer-cont">
+                        <div class="cont-pages">
+                            <h4>Content Pages</h4>
+                            <ul>
+                                <li><a href="../../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                                <li><a href="../../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                                <li><a href="../../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                                <li><a href="../content/content_ST1.html">Healthy Lifestyle & Social Well-being</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Editor page links -->
+                    <div class="footer-cont">
+                        <div class="our-team">
+                            <h4>Editor's Page</h4>
+                            <ul>
+                                <li><a href="../pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                                <li><a href="../../student2/pageEditor_ST2.html">Student 02</a></li>
+                                <li><a href="../../student3/pageEditor_ST3.html">Student 03</a></li>
+                                <li><a href="../../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright information and credits -->
+                <div class="footer-2">
+                    <div class="copyright">
+                        <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                        <b>Designed by Group G24</b></p>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+    </body>
+</html>

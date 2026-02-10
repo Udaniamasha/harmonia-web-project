@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator Page Student 1 - Pathumi Kaveesha</title>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    <link rel="stylesheet" href="../CWK/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Image sizing for validation screenshots */
+        .validation-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* Reflection box styling */
+        .reflection {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        /* Validation section styling */
+        .validation-section {
+            margin-bottom: 40px;
+        }
+        
+        /* Back link styling */
+        .back-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white !important;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background-color: #0056b3;
+            text-decoration: none !important;
+            transform: translateY(-2px);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!--header section-->
+    <header>
+        <a href="../../student2/home.html" id="logo">
+            <img src="../images/logo.jpg" alt="Harmonia Logo">
+        </a>
+        <h2>Harmonia</h2>
+
+        <!-- Main navigation menu -->
+        <nav id="navlist">
+            <a href="../../student2/home.html">Home</a>
+            <a href="../volunteer/volunteer.html" class="active">Volunteer</a>
+            <a href="../../student2/table.html">Wellness</a>
+            <a href="../../student3/feedback.html">Feedback</a>
+            <a href="../../student4/Student04/sitemap.html" >Sitemap</a>
+            <a href="../../student3/team.html">Team</a>
+            <a href="../../student4/Student04/profile.html" id="user_profile" >
+                <img src="../../student2/img/img.webp" alt="User Profile Image">
+            </a>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>Pathumi Kaveesha, Student 01</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!--Splash Screen validation-->
+            <section class="validation-section">
+                <h2 id="splashVal">Splash Page validation report</h2>
+                <div class="reflection">
+                    <h3>Issue Identified and Resolved</h3> 
+                    <br>
+                    <h4>Meta Refresh Content Attribute Error</h4>
+                    <p><strong>Error Message:</strong> Bad value <code>4;url=home.html</code> for attribute <code>content</code> on element <code>meta</code>: Expected a space character, but saw <code>u</code> instead.</p>
+                    <br>
+                    <h5>Initial Code:</h5>
+                    <pre><code>&lt;meta http-equiv="refresh" content="4;url=home.html"&gt;</code></pre>
+                    <br>
+                    <h5>Corrected Code:</h5>
+                    <pre><code>&lt;meta http-equiv="refresh" content="4; url=home.html"&gt;</code></pre>
+                    <br>
+                    <p>The error was resolved by adding a space character between the number and the URL in the content attribute.</p>
+                </div>
+                    <img src="../images/splashValidation.png" alt="Splash Page Validation Screenshot" class="validation-img">
+                                  
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST1.html#splash">Back to the splash section of the Page Editor.</a></p>
+            </section>
+
+            <!--Volunteer page validation-->
+            <section class="validation-section">
+                <h2 id="volunteerVal">Volunteer Page validation report</h2>
+                <div class="reflection">
+                    <h3>Issues Identified and Resolved</h3>
+                    <br>
+                    <h4>1. Character Encoding Declaration Error</h4>
+                    <p>Initial code: <code>&lt;meta charset="=UTF-8"&gt;</code></p>
+                    <p>Corrected to: <code>&lt;meta charset="UTF-8"&gt;</code></p> 
+                    <br>
+                    <h4>2. Empty ID Attribute on H2 Element</h4>
+                    <p>Initial code: <code>&lt;h2 id=""&gt;Harmonia&lt;/h2&gt;</code></p>
+                    <p>Added appropriate identifier to resolve the issue.</p>
+                    <br>
+                    <h4>3. Invalid URL Format</h4>
+                    <p>Initial code: <code>&lt;a href="pageEditor _ST2.html"&gt;</code></p>
+                    <p>Corrected to: <code>&lt;a href="pageEditor_ST2.html"&gt;</code></p>
+                    <p>Removed space in filename to prevent broken links.</p>
+                    <br>
+                    <h4>4. Stray HTML Element</h4>
+                    <p>Removed unpaired <code>&lt;/section&gt;</code> closing tag that had no matching opening tag.</p>
+                    <br>
+                    <p>These corrections were necessary to ensure the page conforms to HTML5 standards. The validation process highlighted the importance of proper syntax in web development. Addressing these issues improves the page's cross-browser compatibility and prevents potential rendering problems.</p>
+            
+                </div>   
+                <img src="../images/volunteerValidation.png" alt="Volunteer Page Validation Screenshot" class="validation-img">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST1.html#volunteer">Back to the volunteer section of the Page Editor.</a></p>
+            </section>
+
+
+            <!-- Project Pages Validation -->
+            <section class="validation-section">
+                <h2 id="projectVal">Project Pages Validation Report</h2>
+                <div class="reflection">
+                    <h3>Issues Identified and Resolved</h3>
+                    <br>
+                    <h4>1. Missing Space Between Attributes</h4>
+                    <p>Initial code: <code>&lt;textarea placeholder="Write your review here... What did you like? What could be improved?"required&gt;&lt;/textarea&gt;</code></p>
+                    <p>Corrected to: <code>&lt;textarea id="feedback-text" name="feedback-text" rows="5" placeholder="Write your review here... What did you like? What could be improved?" required&gt;&lt;/textarea&gt;</code></p>
+                    <p>Added a space character between the closing quote of the placeholder attribute and the required attribute.</p>
+                    <br>
+                </div>   
+                <h4>Fitness page validation</h4>
+                <img src="../images/fitnessValidation.png" alt="Fitness Page Validation Screenshot" class="validation-img">
+                <br>
+                <h4>Mental Aid page validation</h4>
+                <img src="../images/mentalAidValidation.png" alt="Mental Aid Page Validation Screenshot" class="validation-img">
+                <br>
+                <h4>Health Awareness page validation</h4>
+                <img src="../images/healthAwarenessValidation.png" alt="Health Awareness Page Validation Screenshot" class="validation-img">
+                <br>
+                <h4>Healthy meals page validation</h4>
+                <img src="../images/mealsValidation.png" alt="Healthy Meals Page Validation Screenshot" class="validation-img">
+                                    
+                <h3>Back to Page Editor Page</h3>
+                <p><a href="pageEditor_ST1.html#projects">Back to the projects section of the Page Editor.</a></p>
+            </section>
+
+
+            <!--Application page validation-->
+            <section class="validation-section">
+                <h2 id="applyVal">Application Page validation report</h2>
+                <div class="reflection">
+                    
+                    <p>The application page was submitted to the HTML validator and passed all validation checks. No errors or warnings were detected in the code structure, syntax, or attribute usage.</p>
+                    <br>
+                    <h4>Key factors contributing to this success:</h4>
+                    <ul>
+                        <li>Proper nesting of HTML elements</li>
+                        <li>Correct attribute syntax and spacing</li>
+                        <li>Valid document structure with appropriate DOCTYPE declaration</li>
+                        <li>Properly closed tags throughout the document</li>
+                    </ul>
+                </div>   
+                <img src="../images/applyValidation.png" alt="Application Page Validation Screenshot" class="validation-img">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST1.html#apply">Back to the application section of the Page Editor.</a></p>
+            </section>
+
+            <!--Content page validation-->
+            <section class="validation-section">
+                <h2 id="contentVal">Content Page validation report</h2>
+                <div class="reflection">
+                    <p>The content page was submitted to the HTML validator and passed all validation checks without any errors or warnings. The page demonstrates adherence to HTML5 standards and best practices.</p>
+                    <br>
+                    <h4>Notable implementation strengths:</h4>
+                    <ul>
+                        <li>Semantic use of HTML elements</li>
+                        <li>Consistent attribute formatting</li>
+                        <li>Proper character encoding declaration</li>
+                        <li>Appropriate use of structural elements</li>
+                    </ul>
+                </div>   
+                <img src="../images/contentValidation.png" alt="Content Page Validation Screenshot" class="validation-img">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST1.html#content">Back to the content section of the Page Editor.</a></p>
+            </section>
+            
+            
+            
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splashVal">Splash page validation</a></li>
+                        <li><a href="#volunteerVal">Volunteer page validation</a></li>
+                        <li><a href="#projectVal">Project pages validation</a></li>
+                        <li><a href="#applyVal">Application page validation</a></li>
+                        <li><a href="#contentVal">Content page validation</a></li>
+                    </ul>
+            </ul>
+        </aside>
+    </div>
+
+    <span id="editted">Edited by Pathumi Kaveesha - Student 01</span>
+
+    <!-- Back to top button with accessibility attributes -->
+    <button id="button" onclick="window.location.href='#top'" title="Back to Top" aria-label="Back to top of page"></button>
+    
+    <!--footer section-->
+    <section id="footer">
+        <footer class="section_footer">
+            <div class="footer-cont-main">
+                <!-- Social Media Icons -->
+                <div class="footer-cont">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                 <!-- Website navigation links -->
+                <div class="footer-cont">
+                    <div class="use-links">
+                        <h4>Website Links</h4>
+                        <ul>
+                            <li><a href="../../student2/home.html">Home</a></li>
+                            <li><a href="../volunteer/volunteer.html">Volunteer</a></li>
+                            <li><a href="../../student2/table.html">Wellness</a></li>
+                            <li><a href="../../student3/feedback.html">Feedback</a></li>
+                            <li><a href="../../student4/Student04/sitemap.html">Sitemap</a></li>
+                            <li><a href="../../student3/team.html">Team</a></li>
+                            <li><a href="../../student4/Student04/profile.html">User Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                  <!-- Content page links -->
+                <div class="footer-cont">
+                    <div class="cont-pages">
+                        <h4>Content Pages</h4>
+                        <ul>
+                            <li><a href="../../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                            <li><a href="../../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                            <li><a href="../../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                            <li><a href="../content/content_ST1.html">Healthy Lifestyle & Social Well-being</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- Editor page links -->
+                <div class="footer-cont">
+                    <div class="our-team">
+                        <h4>Editor's Page</h4>
+                        <ul>
+                            <li><a href="../pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                            <li><a href="../../student2/pageEditor_ST2.html">Student 02</a></li>
+                            <li><a href="../../student3/pageEditor_ST3.html">Student 03</a></li>
+                            <li><a href="../../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright information and credits -->
+            <div class="footer-2">
+                <div class="copyright">
+                    <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                    <b>Designed by Group G24</b></p>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+</body>
+</html>

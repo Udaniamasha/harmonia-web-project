@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease prevention and healthcare access</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CWK/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="../student2/home.html" id="logo">
+            <img src="images/Harmonia.jpg" alt="Harmonia Logo">
+        </a>
+        <h2>Harmonia</h2>
+
+        <!-- Main navigation menu -->
+        <nav id="navlist">
+            <a href="../student2/home.html">Home</a>
+            <a href="../student1/volunteer/volunteer.html" >Volunteer</a>
+            <a href="../student2/table.html" >Wellness</a>
+            <a href="../student3/feedback.html" class="active">Feedback</a>
+            <a href="../student4/Student04/sitemap.html">Sitemap</a>
+            <a href="../student3/team.html" >Team</a>
+            <a href="../student4/Student04/profile.html" id="user_profile" >
+                <img src="images/img.webp" alt="User Profile Image">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sidebar area -->
+        <div id="fixedMenu">
+            <h3>Core pages developed:</h3>
+            <ol>
+                <li><a href="#feedback">Feedback Page</a></li>
+                <li><a href="#team">Team Page</a></li>
+                <li><a href="#ContentPage">Content Page</a></li>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            </ol>
+        </div>
+
+    <section class="student" id="up">
+        <h2 id="StudentName">K.M.S.I.Kariyapperuma, Student 03</h2>
+    </section>
+
+    <div class="editor"><br>
+        <h2>Page Editor</h2><br><br>
+        <div class="EditorContent" id="feedback">
+            <h3 class="headings">Feedback Form Page</h3>
+            <p>The feedback form page allows users to share their experiences with the website, helping to improve content
+            quality, usability, and overall engagement. The design follows a structured layout that ensures a smooth
+            and intuitive user experience while maintaining accessibility and responsiveness.</p>
+
+            <h4>Key Features and HTML Elements Used</h4>
+            <p>This page uses a semantic HTML structure to improve clarity and accessibility.
+            The <code>&lt;form&gt;</code> element organizes all input fields, while <code>&lt;label&gt;</code> elements
+                provide clear descriptions.<br> The form includes:</p>
+            <ul>
+                <li>Text Inputs <code>&lt;input type="text"&gt;</code> and <code>&lt;input type="email"&gt;</code> –
+                    Collects user details like name and email.</li>
+                <li>Dropdown Menus <code>&lt;select"&gt;</code> – Used for structured responses like age group selection.</li>
+                <li>Radio Buttons <code>&lt;input type="radio"&gt;</code> – Captures user ratings for
+                    satisfaction and content quality.</li>
+                <li>Text Areas <code>&lt;textarea&gt;</code> – Allows users to share detailed feedback or
+                    suggestions.</li>
+                <li>Buttons <code>&lt;button&gt;</code> – Enables form submission and reset functions, with JavaScript
+                    validation to prevent incomplete submissions.</li>
+            </ul>
+            <p>Navigation is included in the <code>&lt;header&gt;</code>,
+            and a structured footer with social media links and additional website resources ensures consistency
+            across the platform.</p>
+
+            <h4>CSS Styling and User Experience Enhancements</h4>
+            <p>The feedback form is designed with a clean and user-friendly interface, applying modern CSS techniques such as:</p>
+            <ul>
+                <li>Responsive Layout – The form adapts to different screen sizes using  <code>max-width: 100%</code> and flexible units.</li>
+                <li>Visual Appeal – <code>border-radius</code> <code>box-shadow</code>, and background colors enhance readability and structure.</li>
+                <li>Interactive Elements – Hover effects <code>box-shadow</code> <code>.inputBoxes</code> provide subtle
+                    feedback when users interact with input fields.</li>
+                <li>Button Styling – Custom padding and background transitions (<code>#FEF8DD</code> → <code>#FFE7C7</code> on hover) improve engagement.</li>
+                <li>Form Spacing and Alignment –
+                    <code>padding</code> and <code>margin</code> values ensure proper spacing for easy navigation.</li>
+            </ul>
+            <br>
+
+            <h4>JavaScript Validation and Accessibility</h4>
+            <p>JavaScript ensures that users have entered all required information before submitting the form.</p>
+            <ul>
+                <li><code>validateForm()</code> Function – Prevents submission if required fields are left empty,
+                    displaying alerts
+                    for missing input.</li>
+                <li><code>confirmReset()</code> Function – Asks for confirmation before resetting the form to
+                    prevent accidental data loss.
+                <li>Keyboard Accessibility – Users can navigate through the form using the <code>Tab</code> key.</li>
+                <li>Interactive Elements – Hover effects <code>box-shadow</code> <code>.inputBoxes</code> provide subtle
+                    feedback when users interact with input fields.</li>
+            </ul>
+            <a href="feedback.html" target="_blank">
+                <img src="images/FeedbackPage.png" alt="FeedbackPage" class="ClickableImages">
+                <p class="imageCaption">figure 01: Feedback Page (click the picture to view the feedback page)</p>
+            </a><br>
+            <a href="validation_ST3.html#feedback" target="_blank">
+                <h6>Back to the feedback page of the validation page</h6>
+            </a>
+        </div><br><br>
+
+
+        <div class="EditorContent" id="team">
+            <h3 class="headings">Team Page</h3>
+            <p>The team page introduces the contributors behind the website,
+                detailing their roles and responsibilities. The design emphasizes clarity, interactivity,
+                and accessibility to ensure a user-friendly experience.</p>
+
+            <h4>Key Features and Structure</h4>
+            <p>The page is organized with semantic HTML elements to enhance accessibility and navigation.
+                The main components include:</p>
+            <ul>
+                <li>Introduction Section – Provides an overview of the team’s purpose and instructions for interacting with the page.</li>
+                <li>Team Member Profiles – Each member has a designated section displaying their name, role, and contributions.</li>
+                <li>Interactive Hover Effects – Users can hover over a team member’s profile to reveal additional
+                    details about their responsibilities.</li>
+                <li>Navigation and Footer – The navigation bar provides access to other sections of the website,
+                    while the footer contains useful links.</li>
+            </ul>
+            <br>
+
+            <h4>CSS Design and Enhancements</h4>
+            <p>The visual design incorporates modern CSS techniques to enhance user experience:</p>
+            <ul>
+                <li>Responsive Layout – The <code>.team</code> class ensures flexibility, allowing the content to adjust based on the screen size.
+                    Aesthetic Styling – The <code>border-radius</code>, <code>box-shadow</code>, and background color <code>#EDF9EB</code> contribute to a clean and professional look.</li>
+                <li>Hover and Transition Effects –
+                <ul>
+                    <li><code>.teamMember:hover</code> applies a <code>transform</code> effect to slightly lift the card, adding a dynamic feel.</li>
+                    <li><code>.teamMember:hover .memberDetails</code> reveals additional information with a <code>scale</code> effect.</li>
+                </ul></li>
+                <li>Spacing and Readability – Padding and margin values create a balanced layout, preventing overcrowding of elements.</li>
+            </ul>
+            <br>
+
+            <h4>Interactive Features and User Experience</h4>
+            <p>The page is designed to be engaging and informative through various interactive elements:</p>
+            <ul>
+                <li>Hover Effects – Users can reveal a team member’s responsibilities by hovering over their profile image.
+                    Keyboard Accessibility – The <code>tabindex="0"</code> attribute ensures that users navigating with a keyboard can access team member profiles.</li>
+                <li>Smooth Transitions – The hover effects are complemented by smooth transitions
+                    (<code>transition: all 0.3s ease</code>) to create an engaging user experience.</li>
+            </ul>
+
+            <a href="team.html" target="_blank">
+                <img src="images/TeamPage.png" alt="TeamPage" class="ClickableImages">
+                <p class="imageCaption">figure 02: Team Page (click the picture to view the team page)</p>
+            </a><br>
+            <a href="validation_ST3.html#team" target="_blank">
+                <h6>Back to the team page of the validation page</h6>
+            </a>
+        </div><br><br>
+
+
+        <div class="EditorContent" id="ContentPage">
+            <h3 class="headings">Disease Prevention and Healthcare Access Page</h3>
+            <p>The Disease Prevention and Healthcare Access page aims to deliver informative content on health-related topics while
+                offering an intuitive and visually engaging user experience. It features well-structured content sections,
+                interactive navigation, and responsive design, ensuring accessibility on a variety of devices.</p>
+
+            <h4>Key Features and Structure</h4>
+            <p>The page is organized with semantic HTML elements to enhance accessibility and navigation.
+                The main components include:</p>
+            <ul>
+                <li>Navigation Bar & Header – A fixed navigation bar provides quick access to different
+                    sections of the website, ensuring seamless user interaction.</li>
+                <li>Slide-Out Menu – A hamburger menu (menu icon) allows users to access key topics with ease.</li>
+                <li>Content Sections – Information is divided into clearly defined subsections, each addressing
+                    different aspects of disease prevention and healthcare access.</li>
+                <li>Image & Caption Alignment – Relevant images are displayed alongside text to improve content
+                    engagement and comprehension.</li>
+                <li>Navigation and Footer – The navigation bar provides access to other sections of the website,
+                    while the footer contains useful links.</li>
+            </ul>
+            <br>
+
+            <h4>CSS Design and Enhancements</h4>
+            <p>The page's visual appeal and user experience are enhanced through modern CSS techniques, including:</p>
+            <ul>
+                <li>Navigation & Menu Styling:
+                    <ul>
+                        <li>The menu bar (<code>#menuBar</code>) remains hidden by default and smoothly expands upon clicking
+                            the menu icon (<code>#menuIcon</code>), improving accessibility.</li>
+                        <li>The menu items (<code>#menuBar a</code>) are styled with padding, transitions, and background color changes
+                            to enhance usability.</li>
+                        <li>The menu footer (<code>.menu-footer</code>) ensures branding consistency by including the website logo and
+                            editorial information.</li>
+                    </ul>
+                </li>
+
+                <li>Content Styling:
+                    <ul>
+                        <li>The <code>.content</code> class ensures a consistent and structured layout, using
+                            <code>border-radius</code>, <code>box-shadow</code>, and <code>padding</code> for a clean presentation.</li>
+                        <li>Hover Effects – Smooth transitions (<code>transition: all 0.3s ease</code>)
+                            highlight content sections upon user interaction.</li>
+                        <li>Image Styling (<code>.images</code>) – Ensures images are properly aligned and resized
+                            (<code>width: 45%</code>, <code>display: block; margin: auto;</code>) for optimal viewing.</li>
+                        <li>Caption Styling (<code>.imageCaption</code>) – Provides concise explanations using centered text with an
+                            adjusted font size for readability.</li>
+                    </ul>
+                </li>
+
+                <li>Button & Interactive Elements:
+                    <ul>
+                        <li>The menu icon (<code>#menuIcon</code>) is styled for easy accessibility (<code>position: fixed;
+                            cursor: pointer; border-radius: 50px; opacity: 0.7;</code>).</li>
+                        <li>Subtopics (<code>.subtopic</code>) use a defined background color and <code>border-radius</code> to maintain
+                            consistency with the site's theme.</li>
+                        <li>Hover Effects for Menu Items – Items change background color (<code>background-color: #FFE7C7;</code>)
+                            when hovered over, providing visual feedback to users.</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+
+            <h4>JavaScript Functionality & Interactive Features</h4>
+            <p>To enhance user experience, JavaScript is used to add interactive menu functionality:</p>
+            <ul>
+                <li><code>toggleMenuBar()</code> Function – Expands or collapses the side menu when the menu icon
+                    is clicked, ensuring a smooth sliding effect.</li>
+                <li>Click Outside to Close – A global event listener detects clicks outside the menu bar
+                    and automatically hides it, improving user navigation.</li>
+            </ul><br>
+
+            <p>Adding interactive elements makes the page more lively and easier to use, reducing clutter and allowing
+                for better navigation. These changes will help the page offer an engaging and smooth experience while
+                keeping it accessible for everyone.</p>
+
+            <a href="content_ST3.html" target="_blank">
+                <img src="images/ContentPage.png" alt="ContentPage" class="ClickableImages">
+                <p class="imageCaption">figure 03: Content Page (click the picture to view the content page)</p>
+            </a><br>
+            <a href="validation_ST3.html#ContentPage" target="_blank">
+                <h6>Back to the content page of the validation page</h6>
+            </a>
+        </div><br><br>
+
+        <div class="EditorContent" id="challenge">
+            <h3 class="headings">Challenges and Lessons Learned</h3>
+            <h4>Technical Challenges & Solutions</h4>
+            <ul>
+                <li>CSS Consistency: Created unified style.css with color variables for standardized appearance</li>
+                <li>Responsive Design: Implemented flexible boxes and percentage-based widths for multi-device compatibility</li>
+                <li>Navigation: Standardized header/footer elements across all pages for intuitive user experience</li>
+            </ul><br>
+
+            <h4>Design & Collaboration Insights</h4>
+            <ul>
+                <li>Interactive Elements: Used CSS transitions for engaging hover effects on team member cards</li>
+                <li>Code Integration: Established file naming conventions and clear directory structure to merge work from team members with varying skill levels</li>
+                <li>Accessibility: Implemented semantic HTML tags and proper image alt text</li>
+            </ul><br>
+
+            <h4>Most Valuable Learnings</h4>
+            <ul>
+                <li>CSS variables created a cohesive design system</li>
+                <li>Standardized navigation improved usability</li>
+                <li>Proper file organization enabled cross-referencing between contributors' work</li>
+                <li>Client-side form validation enhanced user experience</li>
+            </ul><br>
+        </div>
+    </div>
+
+    <a href="#up">
+        <img src="images/arrow.png" alt="toTop" id="gototop_button">
+    </a>
+
+    <span id="edited">Edited by K.M.S.I. Kariyapperuma - Student 03</span>
+    <section id="footer">
+        <footer class="section_footer">
+            <div class="footer-cont-main">
+                <!-- Social Media Icons -->
+                <div class="footer-cont">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Website navigation links -->
+                <div class="footer-cont">
+                    <div class="use-links">
+                        <h4>Website Links</h4>
+                        <ul>
+                            <li><a href="../student2/home.html">Home</a></li>
+                            <li><a href="../student1/volunteer/volunteer.html">Volunteer</a></li>
+                            <li><a href="../student2/table.html">Wellness</a></li>
+                            <li><a href="../student3/feedback.html">Feedback</a></li>
+                            <li><a href="../student4/Student04/sitemap.html">Sitemap</a></li>
+                            <li><a href="../student3/team.html">Team</a></li>
+                            <li><a href="../student4/Student04/profile.html">User Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content page links -->
+                <div class="footer-cont">
+                    <div class="cont-pages">
+                        <h4>Content Pages</h4>
+                        <ul>
+                            <li><a href="../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+                            <li><a href="../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+                            <li><a href="../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+                            <li><a href="../student1/content/content_ST1.html">Healthy Lifestyle & Social
+                                Well-being</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Editor page links -->
+                <div class="footer-cont">
+                    <div class="our-team">
+                        <h4>Editor's Page</h4>
+                        <ul>
+                            <li><a href="../student1/pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+                            <li><a href="../student2/pageEditor_ST2.html">Student 02</a></li>
+                            <li><a href="../student3/pageEditor_ST3.html">Student 03</a></li>
+                            <li><a href="../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright information and credits -->
+            <div class="footer-2">
+                <div class="copyright">
+                    <p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+                        <b>Designed by Group G24</b></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

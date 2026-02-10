@@ -1,0 +1,240 @@
+
+
+/* Base styles */
+body {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 100px auto;
+    position: relative;
+}
+
+a {
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: #1d5859;
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flow-root;
+}
+
+
+
+/* Main content styles */
+main {
+    padding: 2rem 0;
+}
+
+.page-title {
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Side contents navigation - Enhanced */
+.side-contents {
+    position: sticky;
+    top: 100px; 
+    width: 240px; 
+    max-height: calc(100vh - 140px);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 15px;
+    overflow-y: auto;
+    border-left: 4px solid var(--primary-color);
+    align-self: flex-start;
+    margin-right: 30px;
+    float: left; /* Changed from block to inline-block */
+    vertical-align: top; /* Align with the top of the text */
+}
+
+.side-contents-wrapper {
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+.side-contents h2 {
+    color: var(--heading-color);
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(42, 122, 123, 0.3);
+    padding-bottom: 0.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-contents li {
+    margin-bottom: 0.8rem;
+}
+
+.side-contents a {
+    display: block;
+    padding: 0.6rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    color: var(--heading-color);
+}
+
+.side-contents a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+
+/* Content grid layout - modified for one card per row */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-left: 250px; /* Space for side content */
+    clear: right;
+    overflow: hidden;
+}
+
+/* Make sure even in odd-count scenario, cards take full width */
+.odd-count .content-section:last-child {
+    grid-column: 1;
+}
+
+/* Content sections - increased size */
+.content-section {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+    min-height: 400px; /* Increased minimum height */
+}
+
+.content-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    margin: 0;
+    padding: 1.2rem 1.5rem; /* Increased padding */
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.section-content {
+    padding: 2rem; /* Increased padding */
+}
+
+.section-content h3 {
+    color: var(--heading-color);
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem; /* Increased font size */
+}
+
+.section-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem; /* Slightly larger text */
+}
+
+.section-content ul {
+    padding-left: 1.5rem;
+}
+
+.section-content li {
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem; /* Slightly larger text */
+}
+
+/* Image containers */
+.image-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.image-caption {
+    font-size: 0.95rem;
+    color: #777;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+/* Resource boxes */
+.resource-box {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+}
+
+.resource-box h3 {
+    margin-top: 0.5rem;
+    color: var(--heading-color);
+    font-size: 1.3rem;
+}
+
+.resource-box ul {
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation helpers */
+.section-top {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.section-top:hover {
+    background-color: white;
+}
+
+.section-top:active {
+    transform: scale(0.95);
+}
+

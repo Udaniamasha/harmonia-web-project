@@ -1,0 +1,332 @@
+/* Root variables for consistent color scheme throughout the site */
+
+:root {
+    --primary-color: #ACDDDE;
+    --secondary-color: #CAF1DE;
+    --accent-color: #E1F8DC;
+    --light-color: #FEF8DD;
+    --text-color: #555;
+    --heading-color: #2a7a7b;
+}
+/* Universal reset for consistent element sizing across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Smooth scrolling behavior with offset for fixed header */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--light-color);
+    padding: 0.5rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header h2 {
+    color: var(--heading-color);
+    font-size: 2rem;
+    margin: 0 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+/* title styling with hover effect */
+header h2:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Logo image styling*/
+#logo img {
+    height: 5rem;
+    margin: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+#logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation list container*/
+#navlist {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--primary-color);
+}
+/* Navigation link styling*/
+header #navlist a {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    color: var(--heading-color);
+    margin-right: 1.5rem;
+    text-decoration: none;
+    line-height: 3.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+/* Underline animation for navigation links (except profile) */
+header #navlist a:not(#user_profile)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* Active state styling for current page in navigation */
+header #navlist a.active {
+    color: #2a7a7b; 
+    font-weight: 600;
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
+    
+}
+
+#navlist a:hover {
+    color: var(--heading-color);
+    transform: translateY(-2px);
+}
+/* User profile container in navigation */
+#user_profile {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+/* User profile image styling*/
+#user_profile img {
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+#user_profile img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Edited Page*/
+
+#editted {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 0 4px;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    border-radius: 4px;
+    border-left: 3px solid var(--heading-color);
+    font-weight: 500;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+/* Footer styles */
+#footer {
+    position: relative;
+    z-index: 950; /* Higher than sidebar but lower than header */
+}
+
+#footer .section_footer {
+    background: var(--light-color);
+    color: var(--text-color);
+    padding: 4rem 2rem 0;
+}
+/* Footer content layout using flexbox */
+#footer .footer-cont-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+/* Individual footer column styling */
+#footer .footer-cont {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Social media icons container in footer */
+#footer .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+/* Individual social icon styling */
+#footer .social-icon {
+    color: white;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+#footer .social-icon:hover,
+#footer .social-icon:focus {
+    background-color: var(--heading-color);
+    transform: translateY(-5px);
+    outline: none;
+}
+
+#footer h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.8rem;
+    color: var(--heading-color);
+}
+/* Footer list styling  */
+#footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Footer list item spacing */
+#footer ul li {
+    margin: 0.5rem 0;
+}
+
+/* Footer link styling */
+#footer ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    line-height: 1.8;
+    font-size: 1rem;
+    display: block;
+    padding: 0.3rem 0;
+}
+
+
+#footer ul li a:hover,
+#footer ul li a:focus {
+    color: var(--heading-color);
+    transform: translateX(5px);
+    outline: none;
+}
+
+/* Copyright section at bottom of footer */
+#footer .footer-2 {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--primary-color);
+    margin-top: 3rem;
+    color: white;
+}
+
+/* Copyright text styling */
+#footer .copyright p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Back to top button */
+#button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    aria-label: "Back to top";
+}
+
+#button:hover,
+#button:focus {
+    background-color: var(--heading-color);
+    transform: translateY(-3px);
+    outline: none;
+}
+
+/* Arrow icon for "Back to top" button using CSS triangle */
+#button::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    transform: rotate(45deg) translateY(2px);
+}
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 1%;
+    }
+    
+    #logo img {
+        height: 4rem;
+    }
+    
+    header #navlist a {
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    #navlist {
+        overflow-x: auto;
+        padding: 0 0.5rem;
+    }
+    
+    .intro h1 {
+        font-size: 2rem;
+    }
+    
+    .mission, .video {
+        flex: 100%;
+    }
+    
+    .mission {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+

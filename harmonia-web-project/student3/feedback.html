@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Feedback Form</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="CWK/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+		<!-- java-script for customized alerts when user submit or reset the form -->
+		<script>
+			function validateForm() {
+				const form = document.forms["formFEEDBACK"];
+				const name = form["Name"].value;
+				const email = form["email"].value;
+				const age = form["age"].value;
+				const helpful = document.getElementById('helpful').value;
+				const additional = document.getElementById('additional').value;
+				const ratings = document.querySelector('input[name="ratings"]:checked');
+
+				if (name.trim() === "") {
+					alert("Please enter your name");
+					return false;
+				}
+
+				if (email.trim() === "") {
+					alert("Please enter your email");
+					return false;
+				}
+
+				if (age === null || age === "") {
+					alert("Please select your age group");
+					return false;
+				}
+
+				if (helpful.trim() === "") {
+					alert("Please tell us what you found most helpful");
+					return false;
+				}
+
+				if (!ratings) {
+					alert("Please rate your satisfaction with our services");
+					return false;
+				}
+
+				alert("Thank you for your feedback! Your form has been submitted successfully.");
+				return true;
+			}
+
+			// Function for reset confirmation
+			function confirmReset() {
+				return confirm("Are you sure you want to reset the form? this cannot be undone");
+			}
+
+
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<a href="../student2/home.html" id="logo">
+				<img src="images/Harmonia.jpg" alt="Harmonia Logo">
+			</a>
+			<h2>Harmonia</h2>
+
+			<!-- Main navigation menu -->
+			<nav id="navlist">
+				<a href="../student2/home.html">Home</a>
+				<a href="../student1/volunteer/volunteer.html" >Volunteer</a>
+				<a href="../student2/table.html" >Wellness</a>
+				<a href="../student3/feedback.html" class="active">Feedback</a>
+				<a href="../student4/Student04/sitemap.html">Sitemap</a>
+				<a href="../student3/team.html" >Team</a>
+				<a href="../student4/Student04/profile.html" id="user_profile" >
+					<img src="images/img.webp" alt="User Profile Image">
+				</a>
+			</nav>
+		</header>
+
+		<!-- form -->
+		<div class="feedbackForm" id="up">
+			<div id="Top">
+				<h2>Help Us Improve Your Health!</h2>
+			</div>
+			<h5 id="requiredFields">Required Fields*</h5>
+			<p>Thank you for taking the time to share your feedback. It helps us to improve our website to serve your needs better :)</p>
+			<br>
+
+			<form name="formFEEDBACK" action="process.php" method="POST" onreset="return confirmReset()"
+				  onsubmit="return validateForm()">
+				<!--personal details-->
+				<div class="form_group">
+					<label>*Enter your Name: </label> <br>
+					<input class="inputBoxes" name="Name" type="text" placeholder="Enter your name here">
+					<br><br>
+				</div>
+
+				<div class="form_group">
+					<label>*Enter you email: </label> <br>
+					<input class="inputBoxes" name="email" type="email" placeholder="Enter your email here">
+					<br><br>
+				</div>
+
+				<div class="form_group">
+					<label for="age">*Age Group</label> <br>
+					<select class="inputBoxes" id="age" name="age">
+						<option value="" disabled selected>Select your age group</option>
+						<option value="18-29">18-29</option>
+						<option value="30-39">30-39</option>
+						<option value="40-59">40-59</option>
+						<option value="60+">60+</option>
+					</select>
+				</div>
+				<br>
+
+				<div class="form_group">
+					<label for="frequency">How often do you visit our website?</label><br>
+					<select class="inputBoxes" id="frequency" name="frequency">
+						<option value="" disabled selected>Select an option</option>
+						<option value="first-time">This is my first time</option>
+						<option value="weekly">Weekly</option>
+						<option value="monthly">Monthly</option>
+						<option value="quarterly">Every few months</option>
+						<option value="rarely">Rarely</option>
+					</select>
+				</div>
+				<br>
+
+				<div class="form_group">
+					<label>Was this website informative and easy to navigate through?</label><br>
+					<div class="ratingGroup">
+						<input name="user_feedback" type="radio" value="yes">
+						<label>Yes</label>
+						<input name="user_feedback" type="radio" value="no">
+						<label>No</label>
+					</div>
+				</div>
+				<br>
+
+				<div class="form_group">
+					<label for="suggestion">If "no", suggest any improvements for the future.</label><br>
+					<textarea id="suggestion" name="suggestion" placeholder="Suggest us improvements to make..."></textarea>
+				</div>
+				<br>
+
+				<!--Ratings-->
+				<div class="form_group">
+					<label>How satisfied are you with our services?</label><br>
+					<div class="ratingGroup">
+						<input name="ratings" type="radio" value="1">
+						<label>1 (Poor)</label>
+						<input name="ratings" type="radio" value="2">
+						<label>2</label>
+						<input name="ratings" type="radio" value="3">
+						<label>3</label>
+						<input name="ratings" type="radio" value="4">
+						<label>4</label>
+						<input name="ratings" type="radio" value="5">
+						<label>5 (Excellent)</label>
+					</div>
+				</div>
+				<br>
+
+				<!--Ratings-->
+				<div class="form_group">
+					<label>Quality of health information</label><br>
+                    <div class="ratingGroup">
+                        <input name="contentQuality" type="radio" value="1">
+                        <label>1 (Poor)</label>
+                        <input name="contentQuality" type="radio" value="2">
+                        <label>2</label>
+                        <input name="contentQuality" type="radio" value="3">
+                        <label>3</label>
+                        <input name="contentQuality" type="radio" value="4">
+                        <label>4</label>
+                        <input name="contentQuality" type="radio" value="5">
+                        <label>5 (Excellent)</label>
+                    </div>
+				</div><br>
+
+				<div class="form_group">
+					<label for="helpful">*What did you find most helpful about our website?</label><br>
+					<textarea id="helpful" name="helpful" placeholder="Tell us what worked well..."></textarea>
+				</div><br>
+
+				<!--Recommend-->
+				<div class="form_group">
+					<label>Would you recommend our services?</label><br>
+					<div class="ratingGroup">
+						<input name="recommend" type="radio" value="yes">
+						<label>Yes</label>
+						<input name="recommend" type="radio" value="maybe">
+						<label>Maybe</label>
+						<input name="recommend" type="radio" value="no">
+						<label>No</label>
+						<br><br>
+					</div>
+				</div>
+
+				<div class="form_group">
+					<label for="Updates">Would you like to receive updates about the websites and any
+						offers?</label><br>
+					<select class="inputBoxes" name="updates" id="Updates">
+						<option value="" disabled selected>Select an option</option>
+						<option value="yes">Yes-via Email</option>
+						<option value="no">Nope :(</option>
+					</select>
+				</div>
+				<br>
+
+				<div class="form_group">
+					<label for="additional">Do you have any additional questions or requests?</label><br>
+					<textarea id="additional" name="additional" placeholder="Add your message here..."></textarea>
+				</div>
+				<br>
+
+				<br>
+				<div class="buttons">
+					<button id="submit" type="submit">Submit</button>
+					<button id="reset" type="reset" onclick="return confirmReset()">Reset</button>
+				</div>
+
+				<p>The information you provide will only be used to improve our website and services. Thank you! :)</p>
+
+			</form>
+
+		</div>
+
+		<!-- go to top button -->
+		<a href="#up">
+			<img src="images/arrow.png" alt="toTop" id="gototop_button">
+		</a>
+
+		<!-- footer -->
+		<span id="edited">Edited by K.M.S.I. Kariyapperuma - Student 03</span>
+		<section id="footer">
+			<footer class="section_footer">
+				<div class="footer-cont-main">
+					<!-- Social Media Icons -->
+					<div class="footer-cont">
+						<h4>Connect With Us</h4>
+						<div class="social-icons">
+							<a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+							<a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+
+					<!-- Website navigation links -->
+					<div class="footer-cont">
+						<div class="use-links">
+							<h4>Website Links</h4>
+							<ul>
+								<li><a href="../student2/home.html">Home</a></li>
+								<li><a href="../student1/volunteer/volunteer.html">Volunteer</a></li>
+								<li><a href="../student2/table.html">Wellness</a></li>
+								<li><a href="../student3/feedback.html">Feedback</a></li>
+								<li><a href="../student4/Student04/sitemap.html">Sitemap</a></li>
+								<li><a href="../student3/team.html">Team</a></li>
+								<li><a href="../student4/Student04/profile.html">User Profile</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Content page links -->
+					<div class="footer-cont">
+						<div class="cont-pages">
+							<h4>Content Pages</h4>
+							<ul>
+								<li><a href="../student2/content_ST2.html">Physical Health & Nutrition</a></li>
+								<li><a href="../student4/Student04/content_ST4.html">Mental Health & Well-being</a></li>
+								<li><a href="../student3/content_ST3.html">Disease Prevention & Healthcare Access</a></li>
+								<li><a href="../student1/content/content_ST1.html">Healthy Lifestyle & Social
+									Well-being</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Editor page links -->
+					<div class="footer-cont">
+						<div class="our-team">
+							<h4>Editor's Page</h4>
+							<ul>
+								<li><a href="../student1/pageEditor_validator/pageEditor_ST1.html">Student 01</a></li>
+								<li><a href="../student2/pageEditor_ST2.html">Student 02</a></li>
+								<li><a href="../student3/pageEditor_ST3.html">Student 03</a></li>
+								<li><a href="../student4/Student04/pageEditor_ST4.html">Student 04</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Copyright information and credits -->
+				<div class="footer-2">
+					<div class="copyright">
+						<p>&copy; Copyright <b>United Nations</b>. All rights reserved.<br>
+							<b>Designed by Group G24</b></p>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</body>
+</html>
